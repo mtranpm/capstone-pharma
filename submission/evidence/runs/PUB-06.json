@@ -1,0 +1,246 @@
+{
+  "request_id": "REQ-fd29d668b8",
+  "workflow": "pv_intake",
+  "as_of": "2026-08-01T08:00:00Z",
+  "authorization": {
+    "user": "participant_test_user",
+    "purpose": "capstone_evaluation",
+    "checked_at": "2026-08-01T08:00:00Z",
+    "decision": "allow",
+    "reason": "advisory_only"
+  },
+  "evidence": [
+    {
+      "source": "data/listedness_sources.csv",
+      "record_id": "data/listedness_sources.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "source": "IB v12",
+        "risk": "anaphylaxis",
+        "listed": "yes"
+      },
+      "integrity": {
+        "sha256": "2a0e9d178da932846e9a69caa7dbdf2e152ba606f165a2b39a23eccb2d1590b5",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/listedness_sources.csv",
+      "record_id": "data/listedness_sources.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "source": "CCDS v4",
+        "risk": "anaphylaxis",
+        "listed": "yes"
+      },
+      "integrity": {
+        "sha256": "2a0e9d178da932846e9a69caa7dbdf2e152ba606f165a2b39a23eccb2d1590b5",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/listedness_sources.csv",
+      "record_id": "data/listedness_sources.csv#2",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "source": "IN local label",
+        "risk": "anaphylaxis",
+        "listed": "no"
+      },
+      "integrity": {
+        "sha256": "2a0e9d178da932846e9a69caa7dbdf2e152ba606f165a2b39a23eccb2d1590b5",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/product_labels.csv",
+      "record_id": "data/product_labels.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "EU",
+        "version": "6",
+        "risk_text": "severe infusion reactions including anaphylaxis",
+        "status": "approved"
+      },
+      "integrity": {
+        "sha256": "7794ea3f0acbddb3c7df721ccfd9e38c0f6c9380917f10a689ee29dbbe569e3d",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/product_labels.csv",
+      "record_id": "data/product_labels.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "US",
+        "version": "5",
+        "risk_text": "serious infusion reactions",
+        "status": "approved"
+      },
+      "integrity": {
+        "sha256": "7794ea3f0acbddb3c7df721ccfd9e38c0f6c9380917f10a689ee29dbbe569e3d",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/product_labels.csv",
+      "record_id": "data/product_labels.csv#2",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "IN",
+        "version": "3",
+        "risk_text": "infusion reactions",
+        "status": "approved"
+      },
+      "integrity": {
+        "sha256": "7794ea3f0acbddb3c7df721ccfd9e38c0f6c9380917f10a689ee29dbbe569e3d",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/market_authorisations.csv",
+      "record_id": "data/market_authorisations.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "EU",
+        "status": "authorised",
+        "label_version": "6"
+      },
+      "integrity": {
+        "sha256": "d4cdc3063897d0148bed789bade104ae80104fd1351167ba8140681ce734f261",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/market_authorisations.csv",
+      "record_id": "data/market_authorisations.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "US",
+        "status": "authorised",
+        "label_version": "5"
+      },
+      "integrity": {
+        "sha256": "d4cdc3063897d0148bed789bade104ae80104fd1351167ba8140681ce734f261",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/market_authorisations.csv",
+      "record_id": "data/market_authorisations.csv#2",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "IN",
+        "status": "authorised",
+        "label_version": "3"
+      },
+      "integrity": {
+        "sha256": "d4cdc3063897d0148bed789bade104ae80104fd1351167ba8140681ce734f261",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "source_documents/CCDS_NCB204_v4.md",
+      "record_id": "source_documents/CCDS_NCB204_v4.md#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "text_excerpt": "# Synthetic CCDS Extract \u2014 NCB-204 Version 4\n\n- Status: approved\n- Effective date: 2026-03-18\n- Owner: Global Safety and Labeling\n\nThe core safety information lists anaphylaxis under important identified risks. Local listedness and reportin"
+      },
+      "integrity": {
+        "sha256": "4d3767158d5b84871972bde516e9746073ef05a76d393775fa0783b2c8335008",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "knowledge/PV_LISTEDNESS_AUTHORITY.md",
+      "record_id": "knowledge/PV_LISTEDNESS_AUTHORITY.md#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "text_excerpt": "# Pv Listedness Authority\n\n## Document control\n\n- Document ID: K-022\n- Status: approved\n- Effective date: 2026-03-18\n- Synthetic authority: NovaCura Global Policy\n- Training classification: scenario evidence; not a real controlled document\n"
+      },
+      "integrity": {
+        "sha256": "6cca5cdee7c4cea401fe3699cf59206c9f0833953a144fd64ffaf7bb4335d97e",
+        "source_preserved": true
+      }
+    }
+  ],
+  "contradictions": [],
+  "gaps": [
+    {
+      "type": "missing_case_ids"
+    }
+  ],
+  "abstentions": [],
+  "human_review": {
+    "required": true,
+    "role": "pv_case_intake_reviewer"
+  },
+  "execution_status": "not_executed",
+  "audit": {
+    "event_id": "AUD-b3a26836",
+    "trace_id": "tr-428e76f8223d"
+  },
+  "case_ids": [
+    "UNKNOWN"
+  ],
+  "source_facts": [],
+  "duplicate_candidates": [],
+  "clock_evidence": [],
+  "terminology": [],
+  "listedness_context": [
+    {
+      "product": "NCB-204",
+      "source": "IB v12",
+      "risk": "anaphylaxis",
+      "listed": "yes"
+    },
+    {
+      "product": "NCB-204",
+      "source": "CCDS v4",
+      "risk": "anaphylaxis",
+      "listed": "yes"
+    },
+    {
+      "product": "NCB-204",
+      "source": "IN local label",
+      "risk": "anaphylaxis",
+      "listed": "no"
+    }
+  ],
+  "required_reviews": [
+    "duplicate_assessment",
+    "clock_confirmation",
+    "listedness_human_decision"
+  ]
+}

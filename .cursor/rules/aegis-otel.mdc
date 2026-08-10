@@ -1,0 +1,15 @@
+---
+description: AEGIS OpenTelemetry redaction and offline exporter rules
+globs: submission/**/*.py
+alwaysApply: false
+---
+
+# AEGIS OpenTelemetry
+
+Follow `Docs/specs/Engineering/OPENTELEMETRY_TELEMETRY.md`.
+
+- Use `TelemetryPort`; do not hard-require a remote collector.
+- Default to console/file exporter for offline demos.
+- Allow-list span attributes (ids, hashes, flags); deny PII, secrets, raw narratives, full prompts.
+- Correlate `trace_id` with audit `event_id` / `request_id`.
+- Telemetry failures must not bypass safety fail-closed controls.

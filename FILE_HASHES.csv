@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 path,sha256
 .cursor/agents/evidence-reviewer.md,c8c73b8d8470f773b3b90f7c4612acfa338c62be14dea2cf16fcb68dbaeef99e
@@ -301,6 +302,8 @@ tools/rebuild_explorer_data.py,f5f00d62ab098865ef89d5d90171790781b7d6d11a89eeebf
 tools/test_contracts.py,56ec1f75bfd0fa345f509b397badfa79ca58883dde39964eafdcef6fbd0f40c0
 tools/verify_package.py,4a4ace1ee119af6c557fab57a2334028380ddb22a2c794591e66bc75d1fc062d
 =======
+=======
+>>>>>>> c132348 (Initial)
 path,sha256
 .cursor/agents/evidence-reviewer.md,c8c73b8d8470f773b3b90f7c4612acfa338c62be14dea2cf16fcb68dbaeef99e
 .cursor/agents/security-reviewer.md,88faa02fcc952e0860e8a9b6a7b249ca77976fb7e354b06407aba2bbcec9418e
@@ -602,4 +605,7 @@ tools/hash_submission.py,50416bf5d564674bad3e28dac42d1050ec04c1187bcd81a86f557ba
 tools/rebuild_explorer_data.py,f5f00d62ab098865ef89d5d90171790781b7d6d11a89eeebf0fc3443df1ebf15
 tools/test_contracts.py,56ec1f75bfd0fa345f509b397badfa79ca58883dde39964eafdcef6fbd0f40c0
 tools/verify_package.py,4a4ace1ee119af6c557fab57a2334028380ddb22a2c794591e66bc75d1fc062d
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> c132348 (Initial)

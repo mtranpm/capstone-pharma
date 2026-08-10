@@ -1,0 +1,20 @@
+---
+description: AEGIS typed contracts, ports, FastAPI, and OpenTelemetry standards
+globs: submission/**/*.py
+alwaysApply: false
+---
+
+# AEGIS typed contracts & ports
+
+Follow `Docs/specs/Engineering/TYPED_CONTRACTS_PORTS_FASTAPI.md` and `Docs/specs/Engineering/OPENTELEMETRY_TELEMETRY.md`.
+
+- Type-hint all public APIs.
+- Use Pydantic v2 with `strict=True` and `extra="forbid"` for API, LLM, tool, and workflow contracts.
+- Validate tool/function-calling args before execution; return typed error models.
+- Keep domain free of FastAPI/Neo4j/OTel SDK imports — use ports & adapters.
+- FastAPI routers only parse, call services, and map errors; expose OpenAPI `/docs`.
+- Typed HTTP clients: retries with exponential backoff + jitter; bounded attempts.
+- Instrument with OpenTelemetry via `TelemetryPort`; default offline console/file exporter.
+- Never put secrets, raw PV narratives, or system prompts into OTel attributes.
+- CLI/eval must work offline without React or Neo4j (use graph stub).
+- Work only under `submission/`; do not modify challenge evidence.

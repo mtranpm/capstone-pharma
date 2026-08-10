@@ -1,0 +1,28 @@
+services:
+  api:
+    image: python:3.11-slim
+    working_dir: /work
+    volumes:
+      - ../:/work
+    environment:
+      - PYTHONPATH=/work/submission/src
+      - AEGIS_AI_DISABLED=0
+      - AEGIS_USE_NEO4J=0
+    command: python submission/scripts/run_app.py
+    ports:
+      - "8000:8000"
+    # CLI/eval remain available without Docker or Neo4j.
+
+  neo4j:
+    image: neo4j:5
+    profiles: ["neo4j"]
+    environment:
+      - NEO4J_AUTH=neo4j/changeme-local-only
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j_data:/data
+
+volumes:
+  neo4j_data:

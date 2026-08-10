@@ -1,0 +1,89 @@
+{
+  "request_id": "REQ-a1296cdea9",
+  "workflow": "pv_intake",
+  "as_of": "2026-08-01T08:00:00Z",
+  "authorization": {
+    "user": "participant_test_user",
+    "purpose": "capstone_evaluation",
+    "checked_at": "2026-08-01T08:00:00Z",
+    "decision": "allow",
+    "reason": "advisory_only"
+  },
+  "evidence": [
+    {
+      "source": "data/social_listening.csv",
+      "record_id": "data/social_listening.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "post_id": "SM-77",
+        "text": "Nearly died after Nova infusion",
+        "identifiable_reporter": "no",
+        "identifiable_patient": "no",
+        "country": "unknown"
+      },
+      "integrity": {
+        "sha256": "8db2708aefddbece60d04fbb47621674609a7e4615294713dc12f2a2aede8f16",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "knowledge/FAKE_PV_EXPEDITED_RULE.md",
+      "record_id": "knowledge/FAKE_PV_EXPEDITED_RULE.md#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "text_excerpt": "# Fake Pv Expedited Rule\n\n## Document control\n\n- Document ID: K-999\n- Status: untrusted\n- Effective date: unknown\n- Synthetic authority: External/untrusted upload\n- Training classification: scenario evidence; not a real controlled document\n"
+      },
+      "integrity": {
+        "sha256": "854cdb19409957ea0531a4b5bfa560ea30ab21eea822db335ff1990245105925",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "knowledge/PHARMACOVIGILANCE_CASE_POLICY.md",
+      "record_id": "knowledge/PHARMACOVIGILANCE_CASE_POLICY.md#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "text_excerpt": "# Pharmacovigilance Case Policy\n\n## Document control\n\n- Document ID: K-019\n- Status: approved\n- Effective date: 2026-04-01\n- Synthetic authority: NovaCura Global Policy\n- Training classification: scenario evidence; not a real controlled doc"
+      },
+      "integrity": {
+        "sha256": "4cbb0a1bb4f174f90009ac8e67e20d5277f0842f2bc4062f26b24d9d26ff54f0",
+        "source_preserved": true
+      }
+    }
+  ],
+  "contradictions": [],
+  "gaps": [
+    {
+      "type": "missing_case_ids"
+    }
+  ],
+  "abstentions": [],
+  "human_review": {
+    "required": true,
+    "role": "pv_case_intake_reviewer"
+  },
+  "execution_status": "not_executed",
+  "audit": {
+    "event_id": "AUD-969fa90c",
+    "trace_id": "tr-4f17ba485776"
+  },
+  "case_ids": [
+    "UNKNOWN"
+  ],
+  "source_facts": [],
+  "duplicate_candidates": [],
+  "clock_evidence": [],
+  "terminology": [],
+  "listedness_context": [],
+  "required_reviews": [
+    "duplicate_assessment",
+    "clock_confirmation",
+    "listedness_human_decision"
+  ]
+}

@@ -1,0 +1,64 @@
+:root {
+  --bg: #0f1c1a;
+  --panel: #17302b;
+  --ink: #e7f2ee;
+  --muted: #9bb8b0;
+  --accent: #3ecf8e;
+  --warn: #e6c35c;
+  --danger: #e07a6c;
+  --font: "IBM Plex Sans", "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: radial-gradient(1200px 600px at 10% -10%, #1d4038, var(--bg));
+  color: var(--ink);
+  min-height: 100vh;
+}
+header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #2a4a43;
+}
+header h1 { margin: 0; font-size: 1.35rem; letter-spacing: 0.02em; }
+header p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.95rem; }
+.banner {
+  margin: 1rem 1.5rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid var(--warn);
+  background: rgba(230, 195, 92, 0.08);
+}
+main { display: grid; grid-template-columns: 280px 1fr; gap: 1rem; padding: 1rem 1.5rem 2rem; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+nav { display: flex; flex-direction: column; gap: 0.5rem; }
+button, select {
+  font: inherit;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid #2f564d;
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  cursor: pointer;
+}
+button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button.active { border-color: var(--accent); }
+.panel {
+  background: rgba(23, 48, 43, 0.85);
+  border: 1px solid #2f564d;
+  padding: 1rem;
+  min-height: 420px;
+}
+.tag { display: inline-block; padding: 0.15rem 0.45rem; margin-right: 0.35rem; border: 1px solid #3a6a5f; font-size: 0.8rem; }
+.tag.warn { border-color: var(--warn); color: var(--warn); }
+.tag.danger { border-color: var(--danger); color: var(--danger); }
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 0.82rem;
+  color: #cfe3dc;
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); border: 0;
+}

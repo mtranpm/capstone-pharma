@@ -1,0 +1,541 @@
+{
+  "request_id": "REQ-e607f69e60",
+  "workflow": "pv_intake",
+  "as_of": "2026-08-01T08:00:00Z",
+  "authorization": {
+    "user": "participant_test_user",
+    "purpose": "capstone_evaluation",
+    "checked_at": "2026-08-01T08:00:00Z",
+    "decision": "allow",
+    "reason": "advisory_only"
+  },
+  "evidence": [
+    {
+      "source": "data/icsr_cases.csv",
+      "record_id": "PV-1001",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "case_id": "PV-1001",
+        "source": "patient_program",
+        "product": "NCB-204",
+        "event": "anaphylaxis",
+        "country": "DE",
+        "awareness_date": "2026-07-20",
+        "language": "German",
+        "patient_key": "P-7X"
+      },
+      "integrity": {
+        "sha256": "d13496a8a6324d102f1fb0ca373af9dcd1e4fee9f466d6bd14b31bb188a447d2",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/icsr_cases.csv",
+      "record_id": "PV-1009",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "case_id": "PV-1009",
+        "source": "literature",
+        "product": "brand_alias_B",
+        "event": "severe allergic reaction",
+        "country": "DE",
+        "awareness_date": "2026-07-22",
+        "language": "English",
+        "patient_key": "unknown"
+      },
+      "integrity": {
+        "sha256": "d13496a8a6324d102f1fb0ca373af9dcd1e4fee9f466d6bd14b31bb188a447d2",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/icsr_cases.csv",
+      "record_id": "PV-1014",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "case_id": "PV-1014",
+        "source": "call_centre",
+        "product": "NCB204",
+        "event": "breathing difficulty",
+        "country": "DE",
+        "awareness_date": "2026-07-19",
+        "language": "Arabic",
+        "patient_key": "P-7X"
+      },
+      "integrity": {
+        "sha256": "d13496a8a6324d102f1fb0ca373af9dcd1e4fee9f466d6bd14b31bb188a447d2",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/duplicate_candidates.csv",
+      "record_id": "data/duplicate_candidates.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "case_a": "PV-1001",
+        "case_b": "PV-1014",
+        "similarity": "0.93",
+        "reason": "patient/product/date overlap"
+      },
+      "integrity": {
+        "sha256": "6a7c310a63ab556cbd9e0e39eaeb9ce786cd9881e28fef2faa1dac92e8b0adb1",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/duplicate_candidates.csv",
+      "record_id": "data/duplicate_candidates.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "case_a": "PV-1001",
+        "case_b": "PV-1009",
+        "similarity": "0.71",
+        "reason": "event/country overlap"
+      },
+      "integrity": {
+        "sha256": "6a7c310a63ab556cbd9e0e39eaeb9ce786cd9881e28fef2faa1dac92e8b0adb1",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/safety_receipts.csv",
+      "record_id": "PV-1001",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "case_id": "PV-1001",
+        "channel": "vendor",
+        "receipt": "2026-07-19T20:01:00Z"
+      },
+      "integrity": {
+        "sha256": "8fe76fdcf2c69b549e993d48d986ace45fb5eadeca6d394b8599dfedbb25f059",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/safety_receipts.csv",
+      "record_id": "PV-1001",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "case_id": "PV-1001",
+        "channel": "affiliate_inbox",
+        "receipt": "2026-07-20T08:11:00Z"
+      },
+      "integrity": {
+        "sha256": "8fe76fdcf2c69b549e993d48d986ace45fb5eadeca6d394b8599dfedbb25f059",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/safety_receipts.csv",
+      "record_id": "PV-1001",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "case_id": "PV-1001",
+        "channel": "global_db",
+        "receipt": "2026-07-21T12:03:00Z"
+      },
+      "integrity": {
+        "sha256": "8fe76fdcf2c69b549e993d48d986ace45fb5eadeca6d394b8599dfedbb25f059",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/product_master_aliases.csv",
+      "record_id": "data/product_master_aliases.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "alias": "brand_alias_B",
+        "canonical_product": "NCB-204"
+      },
+      "integrity": {
+        "sha256": "aa2e65e965eeb1cafbf8630ed8d0d978c30eb0c8496d95c7e3bb21ed053e59e5",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/product_master_aliases.csv",
+      "record_id": "data/product_master_aliases.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "alias": "NCB204",
+        "canonical_product": "NCB-204"
+      },
+      "integrity": {
+        "sha256": "aa2e65e965eeb1cafbf8630ed8d0d978c30eb0c8496d95c7e3bb21ed053e59e5",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/product_master_aliases.csv",
+      "record_id": "data/product_master_aliases.csv#2",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "alias": "NovaBio mAb",
+        "canonical_product": "NCB-204"
+      },
+      "integrity": {
+        "sha256": "aa2e65e965eeb1cafbf8630ed8d0d978c30eb0c8496d95c7e3bb21ed053e59e5",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/adverse_events.csv",
+      "record_id": "PV-1001",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "case_id": "PV-1001",
+        "verbatim": "anaphylactic reaction",
+        "meddra_version": "27.1",
+        "pt": "Anaphylactic reaction"
+      },
+      "integrity": {
+        "sha256": "073cd1466490294e3b31118bdb04336c2c1d144ad323b3fc2fda0c8adf2757f3",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/adverse_events.csv",
+      "record_id": "PV-1014",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "case_id": "PV-1014",
+        "verbatim": "breathing difficulty after infusion",
+        "meddra_version": "28.0",
+        "pt": "Infusion related reaction"
+      },
+      "integrity": {
+        "sha256": "073cd1466490294e3b31118bdb04336c2c1d144ad323b3fc2fda0c8adf2757f3",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/terminology_versions.csv",
+      "record_id": "data/terminology_versions.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "terminology": "MedDRA",
+        "version": "27.1",
+        "status": "legacy_cases"
+      },
+      "integrity": {
+        "sha256": "68d64717a5a2b3e72e135a5a1ad2db0e23dbc372f3869c46f6b049f8a0afd016",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/terminology_versions.csv",
+      "record_id": "data/terminology_versions.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "terminology": "MedDRA",
+        "version": "28.0",
+        "status": "current_global"
+      },
+      "integrity": {
+        "sha256": "68d64717a5a2b3e72e135a5a1ad2db0e23dbc372f3869c46f6b049f8a0afd016",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/model_performance.csv",
+      "record_id": "data/model_performance.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "model_id": "TRN-OMICS-2",
+        "slice": "Group-A",
+        "metric": "AUROC",
+        "value": "0.86"
+      },
+      "integrity": {
+        "sha256": "3d63d16690d823e5c693f2be4bde53717fecc7a783af077cfbd94d84ee596b5b",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/model_performance.csv",
+      "record_id": "data/model_performance.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "model_id": "TRN-OMICS-2",
+        "slice": "Group-B",
+        "metric": "AUROC",
+        "value": "0.61"
+      },
+      "integrity": {
+        "sha256": "3d63d16690d823e5c693f2be4bde53717fecc7a783af077cfbd94d84ee596b5b",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/model_performance.csv",
+      "record_id": "data/model_performance.csv#2",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "model_id": "PV-NER-4",
+        "slice": "English",
+        "metric": "entity_f1",
+        "value": "0.91"
+      },
+      "integrity": {
+        "sha256": "3d63d16690d823e5c693f2be4bde53717fecc7a783af077cfbd94d84ee596b5b",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/model_performance.csv",
+      "record_id": "data/model_performance.csv#3",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "model_id": "PV-NER-4",
+        "slice": "Hindi",
+        "metric": "entity_f1",
+        "value": "0.67"
+      },
+      "integrity": {
+        "sha256": "3d63d16690d823e5c693f2be4bde53717fecc7a783af077cfbd94d84ee596b5b",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/model_performance.csv",
+      "record_id": "data/model_performance.csv#4",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "model_id": "PV-NER-4",
+        "slice": "Arabic",
+        "metric": "entity_f1",
+        "value": "0.63"
+      },
+      "integrity": {
+        "sha256": "3d63d16690d823e5c693f2be4bde53717fecc7a783af077cfbd94d84ee596b5b",
+        "source_preserved": true
+      }
+    }
+  ],
+  "contradictions": [],
+  "gaps": [
+    {
+      "type": "duplicate_uncertainty",
+      "case_ids": [
+        "PV-1001",
+        "PV-1009",
+        "PV-1014"
+      ],
+      "note": "candidates require human PV review; no merge performed"
+    }
+  ],
+  "abstentions": [],
+  "human_review": {
+    "required": true,
+    "role": "pv_case_intake_reviewer"
+  },
+  "execution_status": "not_executed",
+  "audit": {
+    "event_id": "AUD-550c28ff",
+    "trace_id": "tr-b7c533a7fb42"
+  },
+  "case_ids": [
+    "PV-1001",
+    "PV-1009",
+    "PV-1014"
+  ],
+  "source_facts": [
+    {
+      "case_id": "PV-1001",
+      "fields": {
+        "case_id": "PV-1001",
+        "source": "patient_program",
+        "product": "NCB-204",
+        "event": "anaphylaxis",
+        "country": "DE",
+        "awareness_date": "2026-07-20",
+        "language": "German",
+        "patient_key": "P-7X"
+      }
+    },
+    {
+      "case_id": "PV-1009",
+      "fields": {
+        "case_id": "PV-1009",
+        "source": "literature",
+        "product": "brand_alias_B",
+        "event": "severe allergic reaction",
+        "country": "DE",
+        "awareness_date": "2026-07-22",
+        "language": "English",
+        "patient_key": "unknown"
+      }
+    },
+    {
+      "case_id": "PV-1014",
+      "fields": {
+        "case_id": "PV-1014",
+        "source": "call_centre",
+        "product": "NCB204",
+        "event": "breathing difficulty",
+        "country": "DE",
+        "awareness_date": "2026-07-19",
+        "language": "Arabic",
+        "patient_key": "P-7X"
+      }
+    },
+    {
+      "case_id": "PV-1001",
+      "fields": {
+        "case_id": "PV-1001",
+        "channel": "vendor",
+        "receipt": "2026-07-19T20:01:00Z"
+      }
+    },
+    {
+      "case_id": "PV-1001",
+      "fields": {
+        "case_id": "PV-1001",
+        "channel": "affiliate_inbox",
+        "receipt": "2026-07-20T08:11:00Z"
+      }
+    },
+    {
+      "case_id": "PV-1001",
+      "fields": {
+        "case_id": "PV-1001",
+        "channel": "global_db",
+        "receipt": "2026-07-21T12:03:00Z"
+      }
+    },
+    {
+      "case_id": "PV-1001",
+      "fields": {
+        "case_id": "PV-1001",
+        "verbatim": "anaphylactic reaction",
+        "meddra_version": "27.1",
+        "pt": "Anaphylactic reaction"
+      }
+    },
+    {
+      "case_id": "PV-1014",
+      "fields": {
+        "case_id": "PV-1014",
+        "verbatim": "breathing difficulty after infusion",
+        "meddra_version": "28.0",
+        "pt": "Infusion related reaction"
+      }
+    }
+  ],
+  "duplicate_candidates": [
+    {
+      "case_a": "PV-1001",
+      "case_b": "PV-1014",
+      "similarity": "0.93",
+      "reason": "patient/product/date overlap"
+    },
+    {
+      "case_a": "PV-1001",
+      "case_b": "PV-1009",
+      "similarity": "0.71",
+      "reason": "event/country overlap"
+    }
+  ],
+  "clock_evidence": [
+    {
+      "case_id": "PV-1001",
+      "source": "patient_program",
+      "product": "NCB-204",
+      "event": "anaphylaxis",
+      "country": "DE",
+      "awareness_date": "2026-07-20",
+      "language": "German",
+      "patient_key": "P-7X"
+    },
+    {
+      "case_id": "PV-1009",
+      "source": "literature",
+      "product": "brand_alias_B",
+      "event": "severe allergic reaction",
+      "country": "DE",
+      "awareness_date": "2026-07-22",
+      "language": "English",
+      "patient_key": "unknown"
+    },
+    {
+      "case_id": "PV-1014",
+      "source": "call_centre",
+      "product": "NCB204",
+      "event": "breathing difficulty",
+      "country": "DE",
+      "awareness_date": "2026-07-19",
+      "language": "Arabic",
+      "patient_key": "P-7X"
+    }
+  ],
+  "terminology": [
+    {
+      "case_id": "PV-1001",
+      "verbatim": "anaphylactic reaction",
+      "meddra_version": "27.1",
+      "pt": "Anaphylactic reaction"
+    },
+    {
+      "case_id": "PV-1014",
+      "verbatim": "breathing difficulty after infusion",
+      "meddra_version": "28.0",
+      "pt": "Infusion related reaction"
+    },
+    {
+      "terminology": "MedDRA",
+      "version": "27.1",
+      "status": "legacy_cases"
+    },
+    {
+      "terminology": "MedDRA",
+      "version": "28.0",
+      "status": "current_global"
+    }
+  ],
+  "listedness_context": [],
+  "required_reviews": [
+    "duplicate_assessment",
+    "clock_confirmation",
+    "listedness_human_decision"
+  ]
+}
