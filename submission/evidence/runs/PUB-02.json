@@ -1,0 +1,242 @@
+{
+  "request_id": "REQ-f7c141d7e3",
+  "workflow": "batch_evidence",
+  "as_of": "2026-08-01T08:00:00Z",
+  "authorization": {
+    "user": "participant_test_user",
+    "purpose": "capstone_evaluation",
+    "checked_at": "2026-08-01T08:00:00Z",
+    "decision": "allow",
+    "reason": "advisory_only"
+  },
+  "evidence": [
+    {
+      "source": "data/batches.csv",
+      "record_id": "NCB204-B24071",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "batch_id": "NCB204-B24071",
+        "product_id": "NCB-204",
+        "site": "CMO-IE",
+        "status": "quality_hold",
+        "manufacture_date": "2026-07-10"
+      },
+      "integrity": {
+        "sha256": "4581b8267ce7a7e288c4987dcf447df023067a6c6f161319f1e7bfa79696a869",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/batches.csv",
+      "record_id": "NCS310-S26033",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "batch_id": "NCS310-S26033",
+        "product_id": "NCS-310",
+        "site": "NTG-IN",
+        "status": "pending_review",
+        "manufacture_date": "2026-07-22"
+      },
+      "integrity": {
+        "sha256": "4581b8267ce7a7e288c4987dcf447df023067a6c6f161319f1e7bfa79696a869",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/environmental_monitoring.csv",
+      "record_id": "NCS310-S26033",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "sample_id": "EM-501",
+        "batch_id": "NCS310-S26033",
+        "location": "FF-GradeB-07",
+        "cfu": "4",
+        "alert_limit": "3",
+        "time": "2026-07-22T18:10:00+05:30"
+      },
+      "integrity": {
+        "sha256": "d65d2d36be37b4e9458f390bb568fa4b76e910430a580c19b95fc52054f3e01a",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/microbiology_results.csv",
+      "record_id": "data/microbiology_results.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "sample_id": "EM-501",
+        "initial_id": "Micrococcus spp",
+        "corrected_id": "Bacillus cereus group",
+        "correction_time": "2026-07-25T09:40:00+05:30"
+      },
+      "integrity": {
+        "sha256": "8c1614f4642110a530ea68baff7454d043ee5d59a1ad0b7b2dbf5448ad6b44b7",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/product_complaints.csv",
+      "record_id": "data/product_complaints.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "complaint_id": "PC-701",
+        "product": "NCS-310",
+        "lot": "NCS310-S26033",
+        "issue": "visible particles",
+        "adverse_event_link": "possible"
+      },
+      "integrity": {
+        "sha256": "0c9d6abe0873a714bd2e92899d438d03124fee7005060d8833176a3e422d35fc",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/recall_candidates.csv",
+      "record_id": "data/recall_candidates.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "lot": "NCS310-S26033",
+        "shared_component": "VIAL-V19",
+        "shared_equipment": "FF-02",
+        "distribution": "not shipped"
+      },
+      "integrity": {
+        "sha256": "e5efd65787e8ac72de42eb37d49d100350ed65b268c7ddbb469121f0b65c9163",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/recall_candidates.csv",
+      "record_id": "data/recall_candidates.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "lot": "NCS310-S26031",
+        "shared_component": "VIAL-V19",
+        "shared_equipment": "FF-02",
+        "distribution": "AE hospitals"
+      },
+      "integrity": {
+        "sha256": "e5efd65787e8ac72de42eb37d49d100350ed65b268c7ddbb469121f0b65c9163",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/material_genealogy.csv",
+      "record_id": "NCB204-B24071",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "batch_id": "NCB204-B24071",
+        "material_lot": "RESIN-R44",
+        "relation": "consumed",
+        "source": "MES"
+      },
+      "integrity": {
+        "sha256": "dfc2403fccc48f988a24b5b78531809d754f2b97233409ddcec5107cca9f8048",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/material_genealogy.csv",
+      "record_id": "NCB204-B24071",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "batch_id": "NCB204-B24071",
+        "material_lot": "SUA-88",
+        "relation": "missing_branch",
+        "source": "MES"
+      },
+      "integrity": {
+        "sha256": "dfc2403fccc48f988a24b5b78531809d754f2b97233409ddcec5107cca9f8048",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/material_genealogy.csv",
+      "record_id": "NCS310-S26033",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "batch_id": "NCS310-S26033",
+        "material_lot": "VIAL-V19",
+        "relation": "consumed",
+        "source": "eBR"
+      },
+      "integrity": {
+        "sha256": "dfc2403fccc48f988a24b5b78531809d754f2b97233409ddcec5107cca9f8048",
+        "source_preserved": true
+      }
+    }
+  ],
+  "contradictions": [
+    {
+      "type": "genealogy_break",
+      "material_lot": "SUA-88",
+      "batch_id": "NCB204-B24071",
+      "detail": "missing genealogy branch"
+    }
+  ],
+  "gaps": [],
+  "abstentions": [
+    {
+      "reason": "unresolved_identity_genealogy",
+      "object": "SUA-88",
+      "action": "abstain"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "role": "quality_reviewer_or_qp"
+  },
+  "execution_status": "not_executed",
+  "audit": {
+    "event_id": "AUD-84bac67d",
+    "trace_id": "tr-80a68c9cd4a7"
+  },
+  "batch_id": "NCB204-B24071",
+  "readiness_state": "conflicted_evidence",
+  "applicable_documents": [
+    {
+      "path": "data/batches.csv",
+      "authority": "reference_only"
+    },
+    {
+      "path": "data/environmental_monitoring.csv",
+      "authority": "reference_only"
+    },
+    {
+      "path": "data/microbiology_results.csv",
+      "authority": "reference_only"
+    },
+    {
+      "path": "data/product_complaints.csv",
+      "authority": "reference_only"
+    },
+    {
+      "path": "data/recall_candidates.csv",
+      "authority": "reference_only"
+    },
+    {
+      "path": "data/material_genealogy.csv",
+      "authority": "reference_only"
+    }
+  ]
+}

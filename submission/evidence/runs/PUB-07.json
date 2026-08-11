@@ -1,0 +1,338 @@
+{
+  "request_id": "REQ-719256d916",
+  "workflow": "supply_options",
+  "as_of": "2026-08-01T08:00:00Z",
+  "authorization": {
+    "user": "participant_test_user",
+    "purpose": "capstone_evaluation",
+    "checked_at": "2026-08-01T08:00:00Z",
+    "decision": "allow",
+    "reason": "advisory_only"
+  },
+  "evidence": [
+    {
+      "source": "data/demand_forecast.csv",
+      "record_id": "data/demand_forecast.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "channel": "commercial_EU",
+        "product": "NCB-204",
+        "units_8w": "5200"
+      },
+      "integrity": {
+        "sha256": "173bd152cc053e16a575e4d66544566daeb6e04c52d3a21f86039a7b5cf288e6",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/demand_forecast.csv",
+      "record_id": "data/demand_forecast.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "channel": "clinical_trial",
+        "product": "NCB-204",
+        "units_8w": "900"
+      },
+      "integrity": {
+        "sha256": "173bd152cc053e16a575e4d66544566daeb6e04c52d3a21f86039a7b5cf288e6",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/demand_forecast.csv",
+      "record_id": "data/demand_forecast.csv#2",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "channel": "compassionate_use",
+        "product": "NCB-204",
+        "units_8w": "600"
+      },
+      "integrity": {
+        "sha256": "173bd152cc053e16a575e4d66544566daeb6e04c52d3a21f86039a7b5cf288e6",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/inventory.csv",
+      "record_id": "data/inventory.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "EU",
+        "quality_status": "released",
+        "units": "4300"
+      },
+      "integrity": {
+        "sha256": "9583253d3b011c075457bd0303cbfc3efffa247cde58d3926c56f5cb26f31db0",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/inventory.csv",
+      "record_id": "data/inventory.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "US",
+        "quality_status": "released",
+        "units": "2700"
+      },
+      "integrity": {
+        "sha256": "9583253d3b011c075457bd0303cbfc3efffa247cde58d3926c56f5cb26f31db0",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/inventory.csv",
+      "record_id": "data/inventory.csv#2",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCB-204",
+        "market": "Global",
+        "quality_status": "quarantine",
+        "units": "5100"
+      },
+      "integrity": {
+        "sha256": "9583253d3b011c075457bd0303cbfc3efffa247cde58d3926c56f5cb26f31db0",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/inventory.csv",
+      "record_id": "data/inventory.csv#3",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "product": "NCS-310",
+        "market": "AE",
+        "quality_status": "released",
+        "units": "420"
+      },
+      "integrity": {
+        "sha256": "9583253d3b011c075457bd0303cbfc3efffa247cde58d3926c56f5cb26f31db0",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/allocation_constraints.csv",
+      "record_id": "data/allocation_constraints.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "constraint": "quality_released_only",
+        "priority": "hard"
+      },
+      "integrity": {
+        "sha256": "f614c1a575361b4231a162b53ab084e5a3da9d7d894525491719f3b1d76ccd6a",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/allocation_constraints.csv",
+      "record_id": "data/allocation_constraints.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "constraint": "trial_continuity",
+        "priority": "high"
+      },
+      "integrity": {
+        "sha256": "f614c1a575361b4231a162b53ab084e5a3da9d7d894525491719f3b1d76ccd6a",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/allocation_constraints.csv",
+      "record_id": "data/allocation_constraints.csv#2",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "constraint": "compassionate_use",
+        "priority": "ethics_board_review"
+      },
+      "integrity": {
+        "sha256": "f614c1a575361b4231a162b53ab084e5a3da9d7d894525491719f3b1d76ccd6a",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/allocation_constraints.csv",
+      "record_id": "data/allocation_constraints.csv#3",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "constraint": "market_contracts",
+        "priority": "commercial"
+      },
+      "integrity": {
+        "sha256": "f614c1a575361b4231a162b53ab084e5a3da9d7d894525491719f3b1d76ccd6a",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/ai_use_boundaries.csv",
+      "record_id": "data/ai_use_boundaries.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "use_case": "batch evidence",
+        "allowed": "reconcile, cite, flag, abstain",
+        "prohibited": "release/reject/reprocess/recall"
+      },
+      "integrity": {
+        "sha256": "b6bc768cf67c65230eda96b0901f74f918df335ab29d24e6ecb1ad8f1cf44772",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/ai_use_boundaries.csv",
+      "record_id": "data/ai_use_boundaries.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "use_case": "PV intake",
+        "allowed": "extract, normalize, cluster, cite",
+        "prohibited": "final causality/seriousness/reportability"
+      },
+      "integrity": {
+        "sha256": "b6bc768cf67c65230eda96b0901f74f918df335ab29d24e6ecb1ad8f1cf44772",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/ai_use_boundaries.csv",
+      "record_id": "data/ai_use_boundaries.csv#2",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "use_case": "supply planning",
+        "allowed": "generate options",
+        "prohibited": "reserve/allocate/ship"
+      },
+      "integrity": {
+        "sha256": "b6bc768cf67c65230eda96b0901f74f918df335ab29d24e6ecb1ad8f1cf44772",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "knowledge/SUPPLY_ALLOCATION_ETHICS.md",
+      "record_id": "knowledge/SUPPLY_ALLOCATION_ETHICS.md#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "text_excerpt": "# Supply Allocation Ethics\n\n## Document control\n\n- Document ID: K-029\n- Status: approved\n- Effective date: 2026-05-28\n- Synthetic authority: NovaCura Global Policy\n- Training classification: scenario evidence; not a real controlled document"
+      },
+      "integrity": {
+        "sha256": "6bcc807ffa0c51ac75912361b273a7495cc274a6de18457e74cf6d0f6b5791ee",
+        "source_preserved": true
+      }
+    }
+  ],
+  "contradictions": [],
+  "gaps": [],
+  "abstentions": [
+    {
+      "reason": "quality_status_unresolved_for_execution",
+      "action": "options_only_no_allocation"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "role": "supply_planning_with_quality"
+  },
+  "execution_status": "not_executed",
+  "audit": {
+    "event_id": "AUD-b457f47a",
+    "trace_id": "tr-7bcadd997ee3"
+  },
+  "event_id": "PUB-07",
+  "options": [
+    {
+      "option_id": "OPT-REVIEW-RELEASED-ONLY",
+      "status": "draft",
+      "description": "Prioritise review of already-released stock visibility for human planners",
+      "executes": false,
+      "side_effects": []
+    },
+    {
+      "option_id": "OPT-ETHICS-ESCALATION",
+      "status": "draft",
+      "description": "Escalate trial vs compassionate vs commercial demand conflict to ethics/Quality",
+      "executes": false,
+      "side_effects": []
+    },
+    {
+      "option_id": "OPT-ABSTAIN-SHORTFALL",
+      "status": "draft",
+      "description": "Document shortfall; do not reserve, allocate, or ship",
+      "executes": false,
+      "side_effects": []
+    }
+  ],
+  "constraints": [
+    {
+      "constraint": "quality_released_only",
+      "priority": "hard"
+    },
+    {
+      "constraint": "trial_continuity",
+      "priority": "high"
+    },
+    {
+      "constraint": "compassionate_use",
+      "priority": "ethics_board_review"
+    },
+    {
+      "constraint": "market_contracts",
+      "priority": "commercial"
+    },
+    {
+      "type": "quality_hold_blocks_execution",
+      "holds": [
+        {
+          "product": "NCB-204",
+          "market": "Global",
+          "quality_status": "quarantine",
+          "units": "5100"
+        }
+      ]
+    }
+  ],
+  "approvals_required": [
+    "inventory_status_change",
+    "allocation",
+    "shipment",
+    "recall_initiation",
+    "quality_assessment"
+  ],
+  "quality_holds": [
+    {
+      "product": "NCB-204",
+      "market": "Global",
+      "quality_status": "quarantine",
+      "units": "5100"
+    }
+  ],
+  "no_side_effects": true
+}

@@ -1,0 +1,237 @@
+{
+  "request_id": "REQ-612fbbc9b2",
+  "workflow": "crosscut_clinical",
+  "as_of": "2026-08-01T08:00:00Z",
+  "authorization": {
+    "user": "participant_test_user",
+    "purpose": "capstone_evaluation",
+    "checked_at": "2026-08-01T08:00:00Z",
+    "decision": "allow",
+    "reason": "advisory_only"
+  },
+  "evidence": [
+    {
+      "source": "data/subjects.csv",
+      "record_id": "data/subjects.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "subject_id": "S-301-044",
+        "trial_id": "NCB204-301",
+        "site_id": "IN-014",
+        "status": "screening"
+      },
+      "integrity": {
+        "sha256": "821fd2853b1a8bd0635b555717c41af5aae4d0bae2ad0e7d99c23a9abdb8d6cc",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/subjects.csv",
+      "record_id": "data/subjects.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "subject_id": "S-301-118",
+        "trial_id": "NCB204-301",
+        "site_id": "DE-008",
+        "status": "randomised"
+      },
+      "integrity": {
+        "sha256": "821fd2853b1a8bd0635b555717c41af5aae4d0bae2ad0e7d99c23a9abdb8d6cc",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/eligibility_evidence.csv",
+      "record_id": "data/eligibility_evidence.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "subject_id": "S-301-044",
+        "test": "ALT",
+        "value": "58",
+        "unit": "U/L",
+        "central_uln": "40",
+        "local_uln": "60",
+        "edc_rule_uln": "40"
+      },
+      "integrity": {
+        "sha256": "12db6b98ff9fbc870b943e35193de27c75005fd236032bbc467245f4b7d4a751",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/site_approvals.csv",
+      "record_id": "data/site_approvals.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "site_id": "IN-014",
+        "trial_id": "NCB204-301",
+        "approved_protocol": "4.1",
+        "ec_status": "active"
+      },
+      "integrity": {
+        "sha256": "dc46884effe22b1b1e03b5b74c383aeadeb5bfbe0f4b70e2cdcc6eaadf9a443e",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/site_approvals.csv",
+      "record_id": "data/site_approvals.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "site_id": "DE-008",
+        "trial_id": "NCB204-301",
+        "approved_protocol": "5.0",
+        "ec_status": "active"
+      },
+      "integrity": {
+        "sha256": "dc46884effe22b1b1e03b5b74c383aeadeb5bfbe0f4b70e2cdcc6eaadf9a443e",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/protocol_versions.csv",
+      "record_id": "data/protocol_versions.csv#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "trial_id": "NCB204-301",
+        "version": "5.0",
+        "effective_date": "2026-06-01",
+        "status": "global_current"
+      },
+      "integrity": {
+        "sha256": "7bb80babcd46e01c430134da5b6c28cb53cfbd9dd3fc8c186e1e261aec71398b",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/protocol_versions.csv",
+      "record_id": "data/protocol_versions.csv#1",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "trial_id": "NCB204-301",
+        "version": "4.1",
+        "effective_date": "2026-02-01",
+        "status": "current_IN_pending_amendment"
+      },
+      "integrity": {
+        "sha256": "7bb80babcd46e01c430134da5b6c28cb53cfbd9dd3fc8c186e1e261aec71398b",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/protocol_versions.csv",
+      "record_id": "data/protocol_versions.csv#2",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "trial_id": "NCB204-301",
+        "version": "3.2",
+        "effective_date": "2025-10-01",
+        "status": "obsolete_but_site_cached"
+      },
+      "integrity": {
+        "sha256": "7bb80babcd46e01c430134da5b6c28cb53cfbd9dd3fc8c186e1e261aec71398b",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "source_documents/Protocol_NCB204_301_v4_1.md",
+      "record_id": "source_documents/Protocol_NCB204_301_v4_1.md#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "text_excerpt": "# Synthetic Protocol Context Extract \u2014 NCB204-301 v4.1\n\n- Status: approved at site IN-014\n- Effective at site: 2026-02-01\n- Supersession state: remains locally applicable until amendment approval\n\nEligibility evidence must be reviewed again"
+      },
+      "integrity": {
+        "sha256": "a3b1364999321b228090988c0a861b6f56a12cc95811a76fddc89ed92f2678ec",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "source_documents/Protocol_NCB204_301_v5_0.md",
+      "record_id": "source_documents/Protocol_NCB204_301_v5_0.md#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "text_excerpt": "# Synthetic Protocol Context Extract \u2014 NCB204-301 v5.0\n\n- Status: global current\n- Global effective date: 2026-06-01\n- Site IN-014 approval: pending in supplied evidence\n\nGlobal currency alone does not prove local applicability. This extrac"
+      },
+      "integrity": {
+        "sha256": "28449b57b27e175604a7350fdb5f1f857574a7fdbb320ee4a2adc6cff3115946",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "knowledge/CLINICAL_PROTOCOL_AUTHORITY.md",
+      "record_id": "knowledge/CLINICAL_PROTOCOL_AUTHORITY.md#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "text_excerpt": "# Clinical Protocol Authority\n\n## Document control\n\n- Document ID: K-008\n- Status: approved\n- Effective date: 2026-04-15\n- Synthetic authority: NovaCura Global Policy\n- Training classification: scenario evidence; not a real controlled docum"
+      },
+      "integrity": {
+        "sha256": "d57f0f13c154c6ce6f30e93bc114b288507c987e6ca4750b8283e3c66cf61190",
+        "source_preserved": true
+      }
+    }
+  ],
+  "contradictions": [],
+  "gaps": [],
+  "abstentions": [
+    {
+      "reason": "crosscut_advisory_only",
+      "action": "human_review"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "role": "control_owner"
+  },
+  "execution_status": "not_executed",
+  "audit": {
+    "event_id": "AUD-78b565eb",
+    "trace_id": "tr-bb0fd323310b"
+  },
+  "findings": [
+    {
+      "control": "no_eligibility_decision",
+      "result": "evidence_only"
+    }
+  ],
+  "blocked_actions": [
+    "allocate_stock",
+    "change_inventory_status",
+    "confirm_signal",
+    "final_causality",
+    "final_expectedness",
+    "final_reportability",
+    "final_seriousness",
+    "initiate_recall",
+    "recall_batch",
+    "reject_batch",
+    "relabel_batch",
+    "release_batch",
+    "reprocess_batch",
+    "reserve_capacity",
+    "ship_product"
+  ],
+  "no_side_effects": true,
+  "ai_disabled": false
+}

@@ -1,0 +1,261 @@
+{
+  "request_id": "REQ-e03f49899b",
+  "workflow": "supply_options",
+  "as_of": "2026-08-01T08:00:00Z",
+  "authorization": {
+    "user": "participant_test_user",
+    "purpose": "capstone_evaluation",
+    "checked_at": "2026-08-01T08:00:00Z",
+    "decision": "allow",
+    "reason": "advisory_only"
+  },
+  "evidence": [
+    {
+      "source": "data/shipments.csv",
+      "record_id": "SH-901",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "shipment_id": "SH-901",
+        "product": "NCB-204",
+        "lots": "NCB204-B24062",
+        "lane": "IE>DE",
+        "status": "quarantine",
+        "logger": "LG-31",
+        "pallet": "P-88"
+      },
+      "integrity": {
+        "sha256": "d26f835d400a85a7ba2b01c840a4a5f4f7b72dd677a91f08f8164ce7a5c3b97d",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/shipments.csv",
+      "record_id": "SH-902",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "shipment_id": "SH-902",
+        "product": "NCS-310",
+        "lots": "NCS310-S26031",
+        "lane": "IN>AE",
+        "status": "customs_hold",
+        "logger": "LG-42",
+        "pallet": "P-92"
+      },
+      "integrity": {
+        "sha256": "d26f835d400a85a7ba2b01c840a4a5f4f7b72dd677a91f08f8164ce7a5c3b97d",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/temperature_loggers.csv",
+      "record_id": "LG-31",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "logger": "LG-31",
+        "timestamp": "2026-07-29 02:10",
+        "timezone": "local_unknown",
+        "temp_c": "10.8",
+        "pallet": "P-89"
+      },
+      "integrity": {
+        "sha256": "0b9fdaa37221bd156b00613ebb6b92dcb3c97a77f29358ddac737a657b829b57",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "data/temperature_loggers.csv",
+      "record_id": "LG-31",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "logger": "LG-31",
+        "timestamp": "2026-07-29T01:15:00Z",
+        "timezone": "UTC",
+        "temp_c": "9.7",
+        "pallet": "P-88"
+      },
+      "integrity": {
+        "sha256": "0b9fdaa37221bd156b00613ebb6b92dcb3c97a77f29358ddac737a657b829b57",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "source_documents/Cold_chain_logger_association_SH_901.md",
+      "record_id": "source_documents/Cold_chain_logger_association_SH_901.md#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "text_excerpt": "# Synthetic Logger Association Note \u2014 SH-901\n\n- Shipment pallet in logistics record: P-88\n- Assigned logger: LG-31\n- Exception: one LG-31 record is associated to P-89 and uses an unknown local timezone\n\nAssociation and time normalization re"
+      },
+      "integrity": {
+        "sha256": "52a3f5d23efb3e63078a2cc8255c4ac88168e30682b5f2009c743ac0487ce9ac",
+        "source_preserved": true
+      }
+    },
+    {
+      "source": "knowledge/COLD_CHAIN_ASSESSMENT.md",
+      "record_id": "knowledge/COLD_CHAIN_ASSESSMENT.md#0",
+      "authority": "fixture_provided",
+      "effective_at": null,
+      "retrieved_at": "2026-08-01T08:00:00Z",
+      "facts": {
+        "text_excerpt": "# Cold Chain Assessment\n\n## Document control\n\n- Document ID: K-009\n- Status: approved\n- Effective date: 2026-04-30\n- Synthetic authority: NovaCura Global Policy\n- Training classification: scenario evidence; not a real controlled document\n\n#"
+      },
+      "integrity": {
+        "sha256": "b38c9b15ec5f30b209188d3aff2593acd4173aa5dc2ba0bfaa2ce4b194fcc2ec",
+        "source_preserved": true
+      }
+    }
+  ],
+  "contradictions": [
+    {
+      "type": "cold_chain_clock_dispute",
+      "logger": "LG-31",
+      "timezone": null
+    },
+    {
+      "type": "cold_chain_clock_dispute",
+      "logger": "LG-42",
+      "timezone": null
+    },
+    {
+      "type": "cold_chain_clock_dispute",
+      "logger": "LG-31",
+      "timezone": "local_unknown"
+    },
+    {
+      "type": "logger_pallet_mismatch",
+      "logger": "LG-31",
+      "logger_pallet": "P-89",
+      "shipment_pallets": [
+        "P-88",
+        "P-92"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "type": "cold_chain_or_identity_gap"
+    }
+  ],
+  "abstentions": [
+    {
+      "reason": "unresolved_time",
+      "object": "LG-31",
+      "action": "abstain"
+    },
+    {
+      "reason": "unresolved_time",
+      "object": "LG-42",
+      "action": "abstain"
+    },
+    {
+      "reason": "unresolved_time",
+      "object": "LG-31",
+      "action": "abstain"
+    },
+    {
+      "reason": "unresolved_identity",
+      "object": "LG-31",
+      "action": "abstain_quality_assessment_required"
+    },
+    {
+      "reason": "quality_status_unresolved_for_execution",
+      "action": "options_only_no_allocation"
+    }
+  ],
+  "human_review": {
+    "required": true,
+    "role": "supply_planning_with_quality"
+  },
+  "execution_status": "not_executed",
+  "audit": {
+    "event_id": "AUD-5d715021",
+    "trace_id": "tr-443a60db31e3"
+  },
+  "event_id": "PUB-08",
+  "options": [
+    {
+      "option_id": "OPT-REVIEW-RELEASED-ONLY",
+      "status": "draft",
+      "description": "Prioritise review of already-released stock visibility for human planners",
+      "executes": false,
+      "side_effects": []
+    },
+    {
+      "option_id": "OPT-ETHICS-ESCALATION",
+      "status": "draft",
+      "description": "Escalate trial vs compassionate vs commercial demand conflict to ethics/Quality",
+      "executes": false,
+      "side_effects": []
+    },
+    {
+      "option_id": "OPT-ABSTAIN-SHORTFALL",
+      "status": "draft",
+      "description": "Document shortfall; do not reserve, allocate, or ship",
+      "executes": false,
+      "side_effects": []
+    }
+  ],
+  "constraints": [
+    {
+      "type": "quality_hold_blocks_execution",
+      "holds": [
+        {
+          "shipment_id": "SH-901",
+          "product": "NCB-204",
+          "lots": "NCB204-B24062",
+          "lane": "IE>DE",
+          "status": "quarantine",
+          "logger": "LG-31",
+          "pallet": "P-88"
+        },
+        {
+          "shipment_id": "SH-902",
+          "product": "NCS-310",
+          "lots": "NCS310-S26031",
+          "lane": "IN>AE",
+          "status": "customs_hold",
+          "logger": "LG-42",
+          "pallet": "P-92"
+        }
+      ]
+    }
+  ],
+  "approvals_required": [
+    "inventory_status_change",
+    "allocation",
+    "shipment",
+    "recall_initiation",
+    "quality_assessment"
+  ],
+  "quality_holds": [
+    {
+      "shipment_id": "SH-901",
+      "product": "NCB-204",
+      "lots": "NCB204-B24062",
+      "lane": "IE>DE",
+      "status": "quarantine",
+      "logger": "LG-31",
+      "pallet": "P-88"
+    },
+    {
+      "shipment_id": "SH-902",
+      "product": "NCS-310",
+      "lots": "NCS310-S26031",
+      "lane": "IN>AE",
+      "status": "customs_hold",
+      "logger": "LG-42",
+      "pallet": "P-92"
+    }
+  ],
+  "no_side_effects": true
+}
