@@ -1,0 +1,11 @@
+edge_id,twin_id,from_node,to_node,relation,severity,demo_caption
+E-01,TWIN-BATCH-NCB204-B24071,N-BT-02,N-BT-03,contradicts,conflict,"MES genealogy missing SUA-88 while warehouse shows consumption — identity unresolved"
+E-02,TWIN-BATCH-NCB204-B24071,N-BT-04,N-BT-05,contradicts,conflict,"Potency unit mg/L vs interface/spec ug/mL — do not convert silently"
+E-03,TWIN-BATCH-NCB204-B24071,N-BT-04,N-BT-06,related,conflict,"LIMS OOS vs investigation/notebook state disagreement"
+E-04,TWIN-BATCH-NCB204-B24071,N-BT-07,N-BT-08,blocks,conflict,"Unverified supplier commitment blocks packet completeness"
+E-05,TWIN-BATCH-NCB204-B24071,N-BT-01,N-BT-08,requires,info,"Quality hold batch requires complete release packet before QP external decision"
+E-06,TWIN-CC-SH-901,N-CC-02,N-CC-03,contradicts,conflict,"Logger clock and pallet association disagree — cold-chain identity/time dispute"
+E-07,TWIN-CC-SH-901,N-CC-01,N-CC-04,related,warning,"Quarantine shipment with serialisation aggregation gap"
+E-08,TWIN-PV-1001,N-PV-02,N-PV-01,feeds,conflict,"Clock conflict feeds intake packet — reporting clock not set by AEGIS"
+E-09,TWIN-PV-1001,N-PV-03,N-PV-01,feeds,warning,"Duplicate candidates listed with uncertainty — no auto-merge"
+E-10,TWIN-PV-1001,N-PV-04,N-PV-01,feeds,warning,"Listedness evidence conflict requires RA citation"

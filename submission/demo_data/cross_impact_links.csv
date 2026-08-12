@@ -1,0 +1,6 @@
+link_id,from_case_id,to_case_id,from_object,to_object,product_id,impact_type,severity,demo_caption,suggested_action
+X-01,CASE-B-001,CASE-SUP-001,NCB204-B24071,SH-901,NCB-204,service_risk,high,"Quality hold on pivotal biologic batch constrains recoverable supply options","Notify Supply Planning (informed) — do not auto-allocate"
+X-02,CASE-B-001,CASE-XC-001,NCB204-B24071,IR-72H,NCB-204,inspection_evidence,high,"Inspection war room needs conflict-visible batch packet within 72h","Attach Batch readiness export to IR-72H"
+X-03,CASE-PV-001,CASE-B-001,PV-1001,NCB204-B24071,NCB-204,quality_safety_link,medium,"If intake shows product-quality complaint linkage; inform Quality Release","Optional notify James — no silent batch disposition"
+X-04,CASE-SUP-002,CASE-XC-001,SH-902,IR-72H,NCS-310,inspection_evidence,high,"Sterile injectable cold-chain/customs dispute may be inspection-relevant","Attach Supply options packet (non-executing)"
+X-05,CASE-SUP-002,CASE-B-002,SH-902,NCS310-S26033,NCS-310,channel_pressure,critical,"Hospital/compassionate SLA pressure meets pending batch review","Show Patient Impact panel — escalate ethics if demand conflict"

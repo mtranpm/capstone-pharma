@@ -1,0 +1,18 @@
+node_id,twin_id,twin_type,object_id,product_id,label,layer,state,verbatim_summary,source_ref,conflict_code,persona_hint
+N-BT-01,TWIN-BATCH-NCB204-B24071,batch,NCB204-B24071,NCB-204,Batch header,header,amber,status=quality_hold site=CMO-IE,data/batches.csv,,P-QR
+N-BT-02,TWIN-BATCH-NCB204-B24071,batch,NCB204-B24071,NCB-204,MES genealogy branch,genealogy,red,Missing single-use assembly lot SUA-88 on one branch,data/material_genealogy.csv,unresolved_identity_genealogy,P-MFG
+N-BT-03,TWIN-BATCH-NCB204-B24071,batch,NCB204-B24071,NCB-204,Warehouse consumption,genealogy,red,SUA-88 appears in warehouse movements,data/warehouse_movements.csv,unresolved_identity_genealogy,P-LOG
+N-BT-04,TWIN-BATCH-NCB204-B24071,batch,NCB204-B24071,NCB-204,LIMS potency LR-88,lab,red,value=0.92 unit=mg/L status=OOS_LIMS,data/lab_results.csv,unresolved_unit,P-LAB
+N-BT-05,TWIN-BATCH-NCB204-B24071,batch,NCB204-B24071,NCB-204,Spec / interface assumption,lab,red,spec assumes ug/mL mapping,data/interface_mappings.csv,unresolved_unit_mapping,P-LAB
+N-BT-06,TWIN-BATCH-NCB204-B24071,batch,NCB204-B24071,NCB-204,OOS investigation state,lab,amber,OOS vs OOT vs invalid disagreement,data/oos_investigations.csv,oos_oot_invalid_dispute,P-LAB
+N-BT-07,TWIN-BATCH-NCB204-B24071,batch,NCB204-B24071,NCB-204,Supplier audit commitment,supplier,red,Contract-site audit commitment unverified in release packet,data/supplier_audits.csv,unresolved_authority,P-SQ
+N-BT-08,TWIN-BATCH-NCB204-B24071,batch,NCB204-B24071,NCB-204,Release packet slot,packet,amber,EU packet incomplete pending supplier confirmation,data/release_packets.csv,packet_gap,P-QR
+N-CC-01,TWIN-CC-SH-901,cold_chain,SH-901,NCB-204,Shipment SH-901,header,amber,status=quarantine lane=IE>DE,data/shipments.csv,,P-SP
+N-CC-02,TWIN-CC-SH-901,cold_chain,SH-901,NCB-204,Logger LG-31 UTC,logger,red,2026-07-29T01:15:00Z temp=9.7C pallet=P-88,data/temperature_loggers.csv,unresolved_time,P-LOG
+N-CC-03,TWIN-CC-SH-901,cold_chain,SH-901,NCB-204,Logger LG-31 local_unknown,logger,red,local_unknown clock pallet=P-89 mismatch,data/temperature_loggers.csv,unresolved_identity,P-LOG
+N-CC-04,TWIN-CC-SH-901,cold_chain,SH-901,NCB-204,Serialisation aggregation,pedigree,amber,Aggregation break under review,data/serialisation_events.csv,serialisation_gap,P-LOG
+N-CC-05,TWIN-CC-SH-902,cold_chain,SH-902,NCS-310,Shipment SH-902,header,red,customs_hold IN>AE — compassionate/hospital pressure,data/shipments.csv,,P-SP
+N-PV-01,TWIN-PV-1001,safety_case,PV-1001,NCB-204,Case PV-1001,header,amber,Intake support — no finals,evaluation/public_fixtures/PUB-04.json,,P-INT
+N-PV-02,TWIN-PV-1001,safety_case,PV-1001,NCB-204,Awareness clock sources,clock,red,Conflicting awareness dates across channels,data/safety_receipts.csv,unresolved_time,P-INT
+N-PV-03,TWIN-PV-1001,safety_case,PV-1001,NCB-204,Duplicate candidates,duplicate,amber,PV-1001 / PV-1009 / PV-1014 cluster,data/duplicate_candidates.csv,duplicate_uncertainty,P-INT
+N-PV-04,TWIN-PV-1001,safety_case,PV-1001,NCB-204,Listedness sources,listedness,amber,CCDS vs local label tension,data/listedness_sources.csv,listedness_conflict,P-RA

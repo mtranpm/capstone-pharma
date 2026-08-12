@@ -1,0 +1,8 @@
+case_id,workflow,object_id,product_id,status,primary_persona,accountable_persona,waiting_on,conflict_count,abstention_count,sla_hours_remaining,patient_impact,demo_headline,fixture_ref,trigger_source
+CASE-B-001,batch,NCB204-B24071,NCB-204,supporting_tasks_open,P-QR,P-QP,P-LAB|P-SQ,4,1,18,medium,"Biologics batch on quality hold — genealogy and unit conflicts visible",PUB-01,sor_status_quality_hold
+CASE-B-002,batch,NCS310-S26033,NCS-310,allocated,P-QR,P-QP,P-QR,2,0,10,high,"Sterile injectable pending review — hospital channel pressure",PUB-02,sor_status_pending_review
+CASE-PV-001,pv,PV-1001,NCB-204,evidence_gathering,P-INT,P-MED,P-INT,3,1,24,medium,"Intake support — duplicate and awareness-clock uncertainty",PUB-04,multi_channel_receipt
+CASE-PV-002,pv,PV-1009,NCB-204,supporting_tasks_open,P-INT,P-MED,P-RA|P-DPO,2,1,20,medium,"Listedness source conflict — RA confirmation requested",PUB-05,affiliate_inbox
+CASE-SUP-001,supply,SH-901,NCB-204,packet_draft,P-SP,P-QG,P-LOG,3,1,12,high,"Cold-chain / pallet identity dispute — options only",PUB-07,shipment_quarantine
+CASE-SUP-002,supply,SH-902,NCS-310,awaiting_gatekeeper,P-SP,P-QG,P-QG,2,0,6,critical,"Compassionate / hospital lane on customs hold — ethics visibility",PUB-08,customs_hold
+CASE-XC-001,crosscut,IR-72H,ALL,war_room_open,P-RA,P-CQO,P-QR|P-INT|P-SP,0,0,72,high,"Joint inspection — assemble defence packets across three workflows",PUB-12,inspection_request

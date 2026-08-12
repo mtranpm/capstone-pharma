@@ -1,0 +1,9 @@
+exception_id,case_id,object_id,product_id,slot_name,severity,summary,linked_persona,source_refs,abstain_if_unresolved,demo_coach_mark
+EX-01,CASE-B-001,NCB204-B24071,NCB-204,Genealogy identity,red,SUA-88 missing in MES branch but present in warehouse,P-MFG,data/material_genealogy.csv|data/warehouse_movements.csv,true,"Only exceptions open by default — this is review-by-exception"
+EX-02,CASE-B-001,NCB204-B24071,NCB-204,Potency unit mapping,red,mg/L vs ug/mL mismatch on LR-88,P-LAB,data/lab_results.csv|data/interface_mappings.csv,true,"AEGIS will abstain rather than convert units"
+EX-03,CASE-B-001,NCB204-B24071,NCB-204,OOS/OOT/invalid,amber,Three systems disagree on assay disposition state,P-LAB,data/lab_results.csv|data/oos_investigations.csv,true,"Human lab owner clarifies — AI does not close OOS"
+EX-04,CASE-B-001,NCB204-B24071,NCB-204,Supplier audit authority,red,Contract-site audit commitment unverified,P-SQ,data/supplier_audits.csv|data/release_packets.csv,true,"Unverified authority cannot be treated as closed"
+EX-05,CASE-B-001,NCB204-B24071,NCB-204,Purity result,green,LR-89 purity within spec — citation verified,P-LAB,data/lab_results.csv,false,"Green slots stay collapsed so reviewers focus on judgement"
+EX-06,CASE-SUP-001,SH-901,NCB-204,Logger/pallet identity,red,Logger timestamps and pallet IDs conflict,P-LOG,data/temperature_loggers.csv|data/shipments.csv,true,"Cold-chain twin feeds this exception"
+EX-07,CASE-SUP-002,SH-902,NCS-310,Channel ethics,amber,Customs hold on lane serving hospital/compassionate pressure,P-QG,data/shipments.csv|data/demand_forecast.csv,true,"Priority visibility is not permission to allocate"
+EX-08,CASE-PV-001,PV-1001,NCB-204,Awareness clock,red,Conflicting awareness dates across receipts,P-INT,data/safety_receipts.csv,true,"Clock evidence only — no reportability decision"

@@ -1,0 +1,7 @@
+task_id,request_id,agency_scope,product_focus,workflow,deliverable,owner_persona,status,hours_budget,depends_on_case,demo_note
+IWR-01,IR-72H,"trial,batch,safety,AI controls",NCB-204,batch,Batch readiness packet with conflicts visible,P-QR,open,24,CASE-B-001,Attach PUB-01 class export — no disposition
+IWR-02,IR-72H,"trial,batch,safety,AI controls",NCB-204,pv,PV intake support packet (clocks/duplicates/listedness),P-INT,open,24,CASE-PV-001,No seriousness/causality/reportability finals
+IWR-03,IR-72H,"trial,batch,safety,AI controls",NCB-204|NCS-310,supply,Non-executing supply options + quality holds list,P-SP,open,24,CASE-SUP-001,Include compassionate ethics escalation path
+IWR-04,IR-72H,"trial,batch,safety,AI controls",ALL,crosscut,AI controls evidence — oversight gates AI-disabled continuity,P-SEC|P-PLT,open,12,CASE-XC-001,Show emergency stop and poisoned-tool block demos
+IWR-05,IR-72H,"trial,batch,safety,AI controls",NCX-101,obligations_desk,Exclusivity pressure note — Quality independence preserved,P-RA,open,12,,Link INJ-004 brief outline — not a patent filing
+IWR-06,IR-72H,"trial,batch,safety,AI controls",ALL,audit,Hashed defence bundle index,P-RA,blocked_until_packets,8,IWR-01|IWR-02|IWR-03|IWR-04,Export only after human gate checklist

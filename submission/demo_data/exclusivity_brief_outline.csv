@@ -1,0 +1,9 @@
+brief_item_id,product_id,section,order_no,title,demo_description,evidence_join,owner_persona,status,aegis_output_type,human_next_step
+EB-01,NCX-101,context,1,Exclusivity countdown,"Show 19 months remaining and markets US/EU from portfolio master",data/portfolio_products.csv,P-RA,open,context_card,Confirm commercial strategy outside AEGIS
+EB-02,NCX-101,pressure,2,Board lead-time pressure,"Link 14% release lead-time target — must not weaken QP",data/board_requests.csv,P-CQO,open,pressure_flag,Quality affirms no independence erosion
+EB-03,NCX-101,pressure,3,Forecast confidence caution,"EU forecast confidence 0.62 — treat as planning context not fact",data/commercial_forecast.csv,P-RA,open,citation,Counsel reviews numbers externally
+EB-04,NCX-101,label,4,Label divergence risk,"Portfolio risk tag label divergence — cite product labels / commitments",data/portfolio_products.csv|data/product_labels.csv,P-RA,open,gap_list,RA assesses labelling strategy
+EB-05,NCX-101,obligations,5,EU AI Act transparency & oversight,"Attach OB-04/OB-05 checklist rows for any AI-assisted brief",submission/demo_data/obligation_register.csv,P-RA|P-SEC,open,obligation_checklist,Human signs applicability
+EB-06,NCX-101,case_study,6,Prior defence patterns,"Attach CS-07 patent cliff pattern — accelerate evidence not shortcuts",submission/demo_data/guidance_case_studies.csv,P-RA,open,case_study_ref,Include in counsel briefing pack
+EB-07,NCX-101,boundaries,7,Prohibited autonomous acts,"Reaffirm AI must not change formulation/spec/release/recall",data/ai_use_boundaries.csv,P-CQO,open,boundary_banner,Keep in brief cover sheet
+EB-08,NCX-101,export,8,Draft exclusivity evidence outline,"Generate structured outline with citations and open gaps — not a patent text",this_file,P-RA,open,guidance_brief_draft,"Patent/regulatory counsel drafts filings outside AEGIS"
