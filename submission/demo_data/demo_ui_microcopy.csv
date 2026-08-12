@@ -1,4 +1,9 @@
 copy_id,screen,element,audience,microcopy
+MC-00,shell,app_name,all,"AEGIS"
+MC-00b,shell,company_banner,all,"NovaCura Therapeutics Group (NTG)"
+MC-00c,shell,footer_rights,all,"© 2026 NovaCura Therapeutics Group (NTG). All rights reserved."
+MC-00d,shell,footer_product,all,"AEGIS · Evidence Orchestrator"
+MC-00e,login,subtitle,all,"Evidence Orchestrator — advisory · human-accountable"
 MC-01,shell,global_banner,all,"Advisory only · execution_status = not_executed · Regulated decisions stay with accountable humans"
 MC-02,control_centre,title,exec,"Live Evidence Control Centre — who is reconciling what, right now"
 MC-03,control_centre,subtitle,exec,"This board does not release medicine, finalise safety cases, or ship product"

@@ -22,6 +22,35 @@
 | v1 include | Control Centre · Portfolio · Workflow Cases (3) · Twins (Batch/Safety/Cold-Chain) · RBE · Cross-Impact · Obligations Desk · Patient Impact · Story Mode · thin Continuity |
 | v1 defer | Full Inspection War Room · interactive What-if Simulator · full process-mining Handover Twin (data retained for v1.1) |
 
+### Branding (locked)
+
+| Element | Value |
+|---|---|
+| **Application name** | **AEGIS** |
+| **Product subtitle** (optional under logo) | Evidence Orchestrator — advisory · human-accountable |
+| **Company (banner)** | **NovaCura Therapeutics Group (NTG)** |
+| **Footer** | © {year} NovaCura Therapeutics Group (NTG). All rights reserved. |
+| Do not use in product title | “AI FDE” or equivalent |
+
+### Global chrome — banner & footer (all screens)
+
+**Top banner (persistent, above persona/purpose strip)**
+- Left: **AEGIS** wordmark / logo mark
+- Centre or secondary: company showcase title **NovaCura Therapeutics Group (NTG)**
+- Right (optional thin): environment chip e.g. `Demo · Offline-capable · not_executed`
+- Banner is visible to **all personas**; not role-filtered
+
+**Footer (persistent)**
+- Left: `AEGIS · Evidence Orchestrator`
+- Centre/right: `© 2026 NovaCura Therapeutics Group (NTG). All rights reserved.`
+- Optional micro-line: `Advisory system — does not execute regulated decisions`
+- Footer visible on login (persona picker) and all authenticated screens
+
+**Login / persona picker**
+- Hero brand: **AEGIS**
+- Company line under brand: NovaCura Therapeutics Group (NTG)
+- Footer as above before any persona is selected |
+
 ---
 
 ## 1. Design intent for the live demo

@@ -9,6 +9,9 @@
 | Depends on | `39_persona_to_workflow_e2e_flows.md`, `40_demo_ui_feature_catalogue.md` v1.1, Workflow 1 UI agreements, `submission/demo_data/*` |
 | Login | Demo persona picker |
 | Default home | Control Centre for **all** personas (role-filtered) |
+| App name | **AEGIS** |
+| Company banner | **NovaCura Therapeutics Group (NTG)** |
+| Footer | © 2026 NovaCura Therapeutics Group (NTG). All rights reserved. |
 | Comments | Append-only on conflicts, tasks, twin nodes, packets |
 | Shared shell | Same areas as artefact `40` (War Room / What-if deferred in v1) |
 | PV live depth (locked) | Priya → Aisha + Laura → Markus (+ optional Amira) |
@@ -504,7 +507,8 @@ Each external step is a **labelled simulated acknowledgement** in UI — never a
 | 2 | PV demo depth | Priya → Aisha + Laura → Markus (+ optional Amira) |
 | 3 | Supply demo depth | Sofia → Diego → Tomás + NCS-310 Patient Impact; RA/CMO light |
 | 4 | Default home | Control Centre for all personas, role-filtered, visible to all |
-| 5 | Build | **Not started** — await explicit “freeze and build” |
+| 5 | App branding | **AEGIS**; banner **NovaCura Therapeutics Group (NTG)**; footer all rights reserved NTG |
+| 6 | Build | **Not started** — await explicit “freeze and build” |
 
 No further UI catalogue additions required unless product scope changes.
 
