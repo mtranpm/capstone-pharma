@@ -3,10 +3,24 @@
 | Field | Entry |
 |---|---|
 | Owner | Product / UX demo lead |
-| Version / date | 1.0.0 / 2026-08-12 |
-| Status | Spec for review — **no build started** |
+| Version / date | 1.1.0 / 2026-08-12 |
+| Status | **Ready to freeze** — decisions locked below; build only after explicit go |
+| Companion specs | Workflow 1 agreements (chat) · `41_pv_supply_ui_specs.md` |
 | Sources | Artefacts `05`, `06`, `26`, `38`, `39`; `case/INTEGRATED_CASE.md`; `data/*`; industry patterns (control towers, digital twins, review-by-exception, inspection war rooms) |
 | Demo data | `submission/demo_data/` (synthetic overlays; does **not** alter challenge evidence) |
+
+### Freeze decisions (2026-08-12)
+
+| Decision | Locked value |
+|---|---|
+| Login | Demo persona picker |
+| Default home | **Control Centre for every persona** (role-filtered; visible to all) |
+| Comments | Append-only on conflicts, tasks, twin nodes, packets |
+| Batch demo depth | James claims from SoR hold → Nadia/Helen/Michael/Aisha → James packet → Elena (+ optional Ruth) → eQMS outside |
+| PV demo depth | Priya → Aisha + Laura → Markus (+ optional Amira) → safety DB outside |
+| Supply demo depth | Sofia → Diego → Tomás (+ NCS-310 Patient Impact panel; RA/CMO as light cards unless time) → ERP/eQMS outside |
+| v1 include | Control Centre · Portfolio · Workflow Cases (3) · Twins (Batch/Safety/Cold-Chain) · RBE · Cross-Impact · Obligations Desk · Patient Impact · Story Mode · thin Continuity |
+| v1 defer | Full Inspection War Room · interactive What-if Simulator · full process-mining Handover Twin (data retained for v1.1) |
 
 ---
 
