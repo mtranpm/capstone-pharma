@@ -1,6 +1,6 @@
-# Demo url - https://ais-pre-uzf2riopp3ldajuawjbgpi-830252440593.asia-southeast1.run.app
+# Demo url - https://healthcare-pharma-ai-fde-642990533848.asia-southeast1.run.app/
 
-# Cursor reference for Workflows - https://cursor.com/dashboard/shared-chats?shareId=prd-document-for-google-ai-l8q-tRqVdFMz
+# Cursor reference for Workflows - https://cursor.com/dashboard/shared-chats?shareId=persona-e2e-ui-specs-_mrLhmLulmpd
 # Project AEGIS-PHARMA — Pharmaceutical AI FDE Capstone
 
 A challenge-only, fully synthetic and offline-capable AI Forward Deployed Engineering capstone for a fictional global pharmaceutical enterprise.
