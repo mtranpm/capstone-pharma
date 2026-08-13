@@ -1,4 +1,4 @@
-# Demo url - https://ais-pre-uzf2riopp3ldajuawjbgpi-830252440593.asia-southeast1.run.app
+# Demo url - https://healthcare-pharma-ai-fde-642990533848.asia-southeast1.run.app/
 
 # Cursor reference for Workflows - https://cursor.com/dashboard/shared-chats?shareId=prd-document-for-google-ai-l8q-tRqVdFMz
 # Project AEGIS-PHARMA — Pharmaceutical AI FDE Capstone
