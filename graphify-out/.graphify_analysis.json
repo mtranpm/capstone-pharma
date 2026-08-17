@@ -1,0 +1,961 @@
+{
+  "communities": {
+    "0": [
+      "evaluation_contracts_batch_response_schema",
+      "evaluation_contracts_batch_response_schema_abstentions_items",
+      "evaluation_contracts_batch_response_schema_abstentions_type",
+      "evaluation_contracts_batch_response_schema_additionalproperties",
+      "evaluation_contracts_batch_response_schema_applicable_documents_items",
+      "evaluation_contracts_batch_response_schema_applicable_documents_type",
+      "evaluation_contracts_batch_response_schema_as_of_minlength",
+      "evaluation_contracts_batch_response_schema_as_of_type",
+      "evaluation_contracts_batch_response_schema_audit_type",
+      "evaluation_contracts_batch_response_schema_batch_id_type",
+      "evaluation_contracts_batch_response_schema_contradictions_items",
+      "evaluation_contracts_batch_response_schema_contradictions_type",
+      "evaluation_contracts_batch_response_schema_evidence_items",
+      "evaluation_contracts_batch_response_schema_evidence_type",
+      "evaluation_contracts_batch_response_schema_execution_status_const",
+      "evaluation_contracts_batch_response_schema_gaps_items",
+      "evaluation_contracts_batch_response_schema_gaps_type",
+      "evaluation_contracts_batch_response_schema_human_review_type",
+      "evaluation_contracts_batch_response_schema_id",
+      "evaluation_contracts_batch_response_schema_items_ref",
+      "evaluation_contracts_batch_response_schema_items_type",
+      "evaluation_contracts_batch_response_schema_properties",
+      "evaluation_contracts_batch_response_schema_properties_abstentions",
+      "evaluation_contracts_batch_response_schema_properties_applicable_documents",
+      "evaluation_contracts_batch_response_schema_properties_as_of",
+      "evaluation_contracts_batch_response_schema_properties_audit",
+      "evaluation_contracts_batch_response_schema_properties_batch_id",
+      "evaluation_contracts_batch_response_schema_properties_contradictions",
+      "evaluation_contracts_batch_response_schema_properties_evidence",
+      "evaluation_contracts_batch_response_schema_properties_execution_status",
+      "evaluation_contracts_batch_response_schema_properties_gaps",
+      "evaluation_contracts_batch_response_schema_properties_human_review",
+      "evaluation_contracts_batch_response_schema_properties_readiness_state",
+      "evaluation_contracts_batch_response_schema_properties_request_id",
+      "evaluation_contracts_batch_response_schema_properties_workflow",
+      "evaluation_contracts_batch_response_schema_readiness_state_enum",
+      "evaluation_contracts_batch_response_schema_request_id_minlength",
+      "evaluation_contracts_batch_response_schema_request_id_type",
+      "evaluation_contracts_batch_response_schema_schema",
+      "evaluation_contracts_batch_response_schema_type",
+      "evaluation_contracts_batch_response_schema_workflow_const",
+      "ref_conflicted_evidence",
+      "ref_insufficient_evidence",
+      "ref_ready_for_authorized_review"
+    ],
+    "1": [
+      "evaluation_contracts_evidence_item_schema",
+      "evaluation_contracts_evidence_item_schema_additionalproperties",
+      "evaluation_contracts_evidence_item_schema_authority_minlength",
+      "evaluation_contracts_evidence_item_schema_authority_type",
+      "evaluation_contracts_evidence_item_schema_effective_at_type",
+      "evaluation_contracts_evidence_item_schema_facts_type",
+      "evaluation_contracts_evidence_item_schema_id",
+      "evaluation_contracts_evidence_item_schema_integrity_additionalproperties",
+      "evaluation_contracts_evidence_item_schema_integrity_properties",
+      "evaluation_contracts_evidence_item_schema_integrity_required",
+      "evaluation_contracts_evidence_item_schema_integrity_type",
+      "evaluation_contracts_evidence_item_schema_properties",
+      "evaluation_contracts_evidence_item_schema_properties_authority",
+      "evaluation_contracts_evidence_item_schema_properties_effective_at",
+      "evaluation_contracts_evidence_item_schema_properties_facts",
+      "evaluation_contracts_evidence_item_schema_properties_integrity",
+      "evaluation_contracts_evidence_item_schema_properties_record_id",
+      "evaluation_contracts_evidence_item_schema_properties_retrieved_at",
+      "evaluation_contracts_evidence_item_schema_properties_sha256",
+      "evaluation_contracts_evidence_item_schema_properties_source",
+      "evaluation_contracts_evidence_item_schema_properties_source_preserved",
+      "evaluation_contracts_evidence_item_schema_record_id_minlength",
+      "evaluation_contracts_evidence_item_schema_record_id_type",
+      "evaluation_contracts_evidence_item_schema_required",
+      "evaluation_contracts_evidence_item_schema_retrieved_at_minlength",
+      "evaluation_contracts_evidence_item_schema_retrieved_at_type",
+      "evaluation_contracts_evidence_item_schema_schema",
+      "evaluation_contracts_evidence_item_schema_sha256_pattern",
+      "evaluation_contracts_evidence_item_schema_sha256_type",
+      "evaluation_contracts_evidence_item_schema_source_minlength",
+      "evaluation_contracts_evidence_item_schema_source_preserved_const",
+      "evaluation_contracts_evidence_item_schema_source_type",
+      "evaluation_contracts_evidence_item_schema_type",
+      "ref_authority",
+      "ref_effective_at",
+      "ref_facts",
+      "ref_integrity",
+      "ref_null",
+      "ref_record_id",
+      "ref_retrieved_at",
+      "ref_sha256",
+      "ref_source",
+      "ref_source_preserved",
+      "ref_string"
+    ],
+    "2": [
+      "evaluation_contracts_batch_response_schema_json_ref_as_of",
+      "evaluation_contracts_batch_response_schema_json_ref_audit",
+      "evaluation_contracts_batch_response_schema_json_ref_evidence",
+      "evaluation_contracts_batch_response_schema_json_ref_gaps",
+      "evaluation_contracts_batch_response_schema_required",
+      "evaluation_contracts_pv_response_schema",
+      "evaluation_contracts_pv_response_schema_additionalproperties",
+      "evaluation_contracts_pv_response_schema_id",
+      "evaluation_contracts_pv_response_schema_json_ref_abstentions",
+      "evaluation_contracts_pv_response_schema_json_ref_as_of",
+      "evaluation_contracts_pv_response_schema_json_ref_audit",
+      "evaluation_contracts_pv_response_schema_json_ref_authorization",
+      "evaluation_contracts_pv_response_schema_json_ref_contradictions",
+      "evaluation_contracts_pv_response_schema_json_ref_evidence",
+      "evaluation_contracts_pv_response_schema_json_ref_execution_status",
+      "evaluation_contracts_pv_response_schema_json_ref_gaps",
+      "evaluation_contracts_pv_response_schema_json_ref_human_review",
+      "evaluation_contracts_pv_response_schema_json_ref_request_id",
+      "evaluation_contracts_pv_response_schema_json_ref_workflow",
+      "evaluation_contracts_pv_response_schema_required",
+      "evaluation_contracts_pv_response_schema_schema",
+      "evaluation_contracts_pv_response_schema_type",
+      "evaluation_contracts_supply_response_schema_json_ref_as_of",
+      "evaluation_contracts_supply_response_schema_json_ref_audit",
+      "evaluation_contracts_supply_response_schema_json_ref_evidence",
+      "evaluation_contracts_supply_response_schema_json_ref_gaps",
+      "evaluation_contracts_supply_response_schema_required",
+      "ref_applicable_documents",
+      "ref_approvals_required",
+      "ref_batch_id",
+      "ref_case_ids",
+      "ref_clock_evidence",
+      "ref_constraints",
+      "ref_duplicate_candidates",
+      "ref_event_id",
+      "ref_listedness_context",
+      "ref_no_side_effects",
+      "ref_options",
+      "ref_quality_holds",
+      "ref_readiness_state",
+      "ref_required_reviews",
+      "ref_source_facts",
+      "ref_terminology"
+    ],
+    "3": [
+      "evaluation_contracts_batch_response_schema_authorization_additionalproperties",
+      "evaluation_contracts_batch_response_schema_authorization_properties",
+      "evaluation_contracts_batch_response_schema_authorization_required",
+      "evaluation_contracts_batch_response_schema_authorization_type",
+      "evaluation_contracts_batch_response_schema_checked_at_type",
+      "evaluation_contracts_batch_response_schema_decision_enum",
+      "evaluation_contracts_batch_response_schema_json_ref_allow",
+      "evaluation_contracts_batch_response_schema_json_ref_deny",
+      "evaluation_contracts_batch_response_schema_json_ref_user",
+      "evaluation_contracts_batch_response_schema_properties_authorization",
+      "evaluation_contracts_batch_response_schema_properties_checked_at",
+      "evaluation_contracts_batch_response_schema_properties_decision",
+      "evaluation_contracts_batch_response_schema_properties_purpose",
+      "evaluation_contracts_batch_response_schema_properties_reason",
+      "evaluation_contracts_batch_response_schema_properties_user",
+      "evaluation_contracts_batch_response_schema_purpose_type",
+      "evaluation_contracts_batch_response_schema_reason_type",
+      "evaluation_contracts_batch_response_schema_user_type",
+      "evaluation_contracts_pv_response_schema_authorization_additionalproperties",
+      "evaluation_contracts_pv_response_schema_authorization_properties",
+      "evaluation_contracts_pv_response_schema_authorization_required",
+      "evaluation_contracts_pv_response_schema_authorization_type",
+      "evaluation_contracts_pv_response_schema_checked_at_type",
+      "evaluation_contracts_pv_response_schema_decision_enum",
+      "evaluation_contracts_pv_response_schema_json_ref_allow",
+      "evaluation_contracts_pv_response_schema_json_ref_checked_at",
+      "evaluation_contracts_pv_response_schema_json_ref_decision",
+      "evaluation_contracts_pv_response_schema_json_ref_deny",
+      "evaluation_contracts_pv_response_schema_json_ref_purpose",
+      "evaluation_contracts_pv_response_schema_json_ref_user",
+      "evaluation_contracts_pv_response_schema_properties_authorization",
+      "evaluation_contracts_pv_response_schema_properties_checked_at",
+      "evaluation_contracts_pv_response_schema_properties_decision",
+      "evaluation_contracts_pv_response_schema_properties_purpose",
+      "evaluation_contracts_pv_response_schema_properties_reason",
+      "evaluation_contracts_pv_response_schema_properties_user",
+      "evaluation_contracts_pv_response_schema_purpose_type",
+      "evaluation_contracts_pv_response_schema_reason_type",
+      "evaluation_contracts_pv_response_schema_user_type",
+      "evaluation_contracts_supply_response_schema_authorization_required",
+      "evaluation_contracts_supply_response_schema_json_ref_user"
+    ],
+    "4": [
+      "basemodel",
+      "submission_src_aegis_contracts_base",
+      "submission_src_aegis_contracts_base_auditinfo",
+      "submission_src_aegis_contracts_base_authorizationcontext",
+      "submission_src_aegis_contracts_base_evidenceitem",
+      "submission_src_aegis_contracts_base_humanreview",
+      "submission_src_aegis_contracts_base_integrityinfo",
+      "submission_src_aegis_contracts_base_rationale_54",
+      "submission_src_aegis_contracts_base_strictmodel",
+      "submission_src_aegis_contracts_base_toolcallargs",
+      "submission_src_aegis_contracts_init",
+      "submission_src_aegis_contracts_workflows",
+      "submission_src_aegis_contracts_workflows_batchresponse",
+      "submission_src_aegis_contracts_workflows_pvresponse",
+      "submission_src_aegis_contracts_workflows_supplyresponse",
+      "submission_src_aegis_contracts_workflows_workflowrequest",
+      "submission_src_aegis_services_batch",
+      "submission_src_aegis_services_batch_detect_batch_issues",
+      "submission_src_aegis_services_batch_py_any",
+      "submission_src_aegis_services_batch_run_batch",
+      "submission_src_aegis_services_evidence",
+      "submission_src_aegis_services_evidence_authorization_from_fixture",
+      "submission_src_aegis_services_evidence_fixture_evidence_items",
+      "submission_src_aegis_services_evidence_py_any",
+      "submission_src_aegis_services_evidence_rationale_9",
+      "submission_src_aegis_services_pv",
+      "submission_src_aegis_services_pv_py_any",
+      "submission_src_aegis_services_pv_run_pv",
+      "submission_src_aegis_services_supply",
+      "submission_src_aegis_services_supply_py_any",
+      "submission_src_aegis_services_supply_run_supply",
+      "submission_tests_contracts_test_pydantic_schema_alignment",
+      "submission_tests_contracts_test_pydantic_schema_alignment_batch_schema",
+      "submission_tests_contracts_test_pydantic_schema_alignment_test_batch_response_model_validates_against_json_schema"
+    ],
+    "5": [
+      "submission_evaluation_graders_g_boundaries",
+      "submission_evaluation_graders_g_boundaries_base",
+      "submission_evaluation_graders_g_boundaries_grade_abstention",
+      "submission_evaluation_graders_g_boundaries_grade_authority",
+      "submission_evaluation_graders_g_boundaries_grade_batch",
+      "submission_evaluation_graders_g_boundaries_grade_clinical",
+      "submission_evaluation_graders_g_boundaries_grade_exec",
+      "submission_evaluation_graders_g_boundaries_grade_finops",
+      "submission_evaluation_graders_g_boundaries_grade_human",
+      "submission_evaluation_graders_g_boundaries_grade_owasp",
+      "submission_evaluation_graders_g_boundaries_grade_privacy",
+      "submission_evaluation_graders_g_boundaries_grade_provenance",
+      "submission_evaluation_graders_g_boundaries_grade_pv",
+      "submission_evaluation_graders_g_boundaries_grade_reliability",
+      "submission_evaluation_graders_g_boundaries_grade_supply",
+      "submission_evaluation_graders_g_boundaries_py_any",
+      "submission_evaluation_graders_g_iso_eu",
+      "submission_evaluation_graders_g_iso_eu_base",
+      "submission_evaluation_graders_g_iso_eu_grade_iso_eu",
+      "submission_evaluation_graders_g_iso_eu_py_any",
+      "submission_evaluation_graders_g_iso_eu_rationale_17",
+      "submission_evaluation_graders_g_otel",
+      "submission_evaluation_graders_g_otel_base",
+      "submission_evaluation_graders_g_otel_grade_otel",
+      "submission_evaluation_graders_g_otel_py_any",
+      "submission_evaluation_graders_g_otel_rationale_30",
+      "submission_evaluation_graders_g_schema",
+      "submission_evaluation_graders_g_schema_grade",
+      "submission_evaluation_graders_g_schema_py_any",
+      "submission_evaluation_graders_g_schema_py_path",
+      "submission_evaluation_graders_registry"
+    ],
+    "6": [
+      "protocol",
+      "submission_src_aegis_adapters_graph_memory",
+      "submission_src_aegis_adapters_graph_memory_inmemorygraphstub",
+      "submission_src_aegis_adapters_graph_memory_inmemorygraphstub_init",
+      "submission_src_aegis_adapters_graph_memory_inmemorygraphstub_list_ontology",
+      "submission_src_aegis_adapters_graph_memory_inmemorygraphstub_query_subgraph",
+      "submission_src_aegis_adapters_graph_memory_py_any",
+      "submission_src_aegis_adapters_graph_memory_rationale_7",
+      "submission_src_aegis_ports_init",
+      "submission_src_aegis_ports_init_auditport",
+      "submission_src_aegis_ports_init_auditport_emit",
+      "submission_src_aegis_ports_init_authorityport",
+      "submission_src_aegis_ports_init_authorityport_classify_document",
+      "submission_src_aegis_ports_init_fixtureport",
+      "submission_src_aegis_ports_init_fixtureport_load_fixture",
+      "submission_src_aegis_ports_init_graphport",
+      "submission_src_aegis_ports_init_graphport_list_ontology",
+      "submission_src_aegis_ports_init_graphport_query_subgraph",
+      "submission_src_aegis_ports_init_llmport",
+      "submission_src_aegis_ports_init_llmport_complete",
+      "submission_src_aegis_ports_init_py_any",
+      "submission_src_aegis_ports_init_telemetryport",
+      "submission_src_aegis_ports_init_telemetryport_counter",
+      "submission_src_aegis_ports_init_telemetryport_end_span",
+      "submission_src_aegis_ports_init_telemetryport_start_span",
+      "submission_src_aegis_ports_init_toolmanifestport",
+      "submission_src_aegis_ports_init_toolmanifestport_is_approved",
+      "submission_tests_contracts_test_port_adapter_fakes",
+      "submission_tests_contracts_test_port_adapter_fakes_test_container_uses_stub_by_default",
+      "submission_tests_contracts_test_port_adapter_fakes_test_in_memory_graph_satisfies_port"
+    ],
+    "7": [
+      "permissionerror",
+      "submission_src_aegis_cli",
+      "submission_src_aegis_cli_main",
+      "submission_src_aegis_domain_prohibited",
+      "submission_src_aegis_domain_prohibited_is_prohibited",
+      "submission_src_aegis_services_crosscut",
+      "submission_src_aegis_services_crosscut_py_any",
+      "submission_src_aegis_services_crosscut_rationale_11",
+      "submission_src_aegis_services_crosscut_run_crosscut",
+      "submission_src_aegis_services_init",
+      "submission_src_aegis_services_init_rationale_1",
+      "submission_src_aegis_services_orchestrator",
+      "submission_src_aegis_services_orchestrator_prohibitedactionerror",
+      "submission_src_aegis_services_orchestrator_py_any",
+      "submission_src_aegis_services_orchestrator_rationale_26",
+      "submission_src_aegis_services_orchestrator_run_fixture_workflow",
+      "submission_tests_security_test_prohibited_and_owasp",
+      "submission_tests_security_test_prohibited_and_owasp_py_parametrize",
+      "submission_tests_security_test_prohibited_and_owasp_test_each_prohibited_action_blocked",
+      "submission_tests_security_test_prohibited_and_owasp_test_pub09_security_fail_closed",
+      "submission_tests_workflows_test_pub_workflows",
+      "submission_tests_workflows_test_pub_workflows_py_parametrize",
+      "submission_tests_workflows_test_pub_workflows_test_all_public_fixtures_not_executed",
+      "submission_tests_workflows_test_pub_workflows_test_prohibited_action_blocked",
+      "submission_tests_workflows_test_pub_workflows_test_pub01_conflicted_not_disposition",
+      "submission_tests_workflows_test_pub_workflows_test_pub04_pv_boundary",
+      "submission_tests_workflows_test_pub_workflows_test_pub07_supply_non_executing"
+    ],
+    "8": [
+      "submission_scripts_load_graph",
+      "submission_scripts_load_graph_main",
+      "submission_scripts_load_graph_plan",
+      "submission_src_aegis_adapters_graph_neo4j",
+      "submission_src_aegis_adapters_graph_neo4j_neo4jgraphadapter",
+      "submission_src_aegis_adapters_graph_neo4j_neo4jgraphadapter_close",
+      "submission_src_aegis_adapters_graph_neo4j_neo4jgraphadapter_edge_dict",
+      "submission_src_aegis_adapters_graph_neo4j_neo4jgraphadapter_ensure_driver",
+      "submission_src_aegis_adapters_graph_neo4j_neo4jgraphadapter_init",
+      "submission_src_aegis_adapters_graph_neo4j_neo4jgraphadapter_list_ontology",
+      "submission_src_aegis_adapters_graph_neo4j_neo4jgraphadapter_node_dict",
+      "submission_src_aegis_adapters_graph_neo4j_neo4jgraphadapter_query_subgraph",
+      "submission_src_aegis_adapters_graph_neo4j_neo4jgraphadapter_seed_from_plan",
+      "submission_src_aegis_adapters_graph_neo4j_neo4jgraphadapter_unavailable",
+      "submission_src_aegis_adapters_graph_neo4j_py_any",
+      "submission_src_aegis_adapters_graph_neo4j_rationale_163",
+      "submission_src_aegis_adapters_graph_neo4j_rationale_29",
+      "submission_tests_contracts_test_neo4j_adapter_contract",
+      "submission_tests_contracts_test_neo4j_adapter_contract_test_allow_listed_queries_are_parameterized",
+      "submission_tests_contracts_test_neo4j_adapter_contract_test_list_ontology_degrades_without_server",
+      "submission_tests_contracts_test_neo4j_adapter_contract_test_neo4j_adapter_is_graph_port"
+    ],
+    "9": [
+      "submission_src_aegis_adapters_audit",
+      "submission_src_aegis_adapters_audit_inmemoryauditadapter",
+      "submission_src_aegis_adapters_audit_inmemoryauditadapter_emit",
+      "submission_src_aegis_adapters_audit_inmemoryauditadapter_init",
+      "submission_src_aegis_adapters_audit_py_any",
+      "submission_src_aegis_adapters_authority",
+      "submission_src_aegis_adapters_authority_py_any",
+      "submission_src_aegis_adapters_authority_rationale_7",
+      "submission_src_aegis_adapters_authority_staticauthorityadapter",
+      "submission_src_aegis_adapters_authority_staticauthorityadapter_classify_document",
+      "submission_src_aegis_adapters_fixture_loader",
+      "submission_src_aegis_adapters_fixture_loader_filefixtureadapter",
+      "submission_src_aegis_adapters_fixture_loader_filefixtureadapter_init",
+      "submission_src_aegis_adapters_fixture_loader_filefixtureadapter_load_fixture",
+      "submission_src_aegis_adapters_fixture_loader_py_any",
+      "submission_src_aegis_adapters_fixture_loader_py_path",
+      "submission_src_aegis_adapters_fixture_loader_rationale_9",
+      "submission_src_aegis_composition",
+      "submission_src_aegis_composition_py_path",
+      "submission_src_aegis_composition_repo_root"
+    ],
+    "10": [
+      "react",
+      "react_dom",
+      "submission_app_package",
+      "submission_app_package_dependencies",
+      "submission_app_package_dependencies_react",
+      "submission_app_package_dependencies_react_dom",
+      "submission_app_package_devdependencies",
+      "submission_app_package_devdependencies_vite",
+      "submission_app_package_devdependencies_vitejs_plugin_react",
+      "submission_app_package_name",
+      "submission_app_package_private",
+      "submission_app_package_scripts",
+      "submission_app_package_scripts_build",
+      "submission_app_package_scripts_dev",
+      "submission_app_package_scripts_preview",
+      "submission_app_package_type",
+      "submission_app_package_version",
+      "vite",
+      "vitejs_plugin_react"
+    ],
+    "11": [
+      "evaluation_contracts_supply_response_schema_authorization_additionalproperties",
+      "evaluation_contracts_supply_response_schema_authorization_properties",
+      "evaluation_contracts_supply_response_schema_authorization_type",
+      "evaluation_contracts_supply_response_schema_checked_at_type",
+      "evaluation_contracts_supply_response_schema_decision_enum",
+      "evaluation_contracts_supply_response_schema_json_ref_allow",
+      "evaluation_contracts_supply_response_schema_json_ref_deny",
+      "evaluation_contracts_supply_response_schema_properties_authorization",
+      "evaluation_contracts_supply_response_schema_properties_checked_at",
+      "evaluation_contracts_supply_response_schema_properties_decision",
+      "evaluation_contracts_supply_response_schema_properties_purpose",
+      "evaluation_contracts_supply_response_schema_properties_reason",
+      "evaluation_contracts_supply_response_schema_properties_user",
+      "evaluation_contracts_supply_response_schema_purpose_type",
+      "evaluation_contracts_supply_response_schema_reason_type",
+      "evaluation_contracts_supply_response_schema_user_type"
+    ],
+    "12": [
+      "submission_evaluation_metrics_agreement",
+      "submission_evaluation_metrics_agreement_agreementreport",
+      "submission_evaluation_metrics_agreement_agreementreport_to_dict",
+      "submission_evaluation_metrics_agreement_cohen_kappa",
+      "submission_evaluation_metrics_agreement_compute_agreement",
+      "submission_evaluation_metrics_agreement_gwet_ac1",
+      "submission_evaluation_metrics_agreement_py_any",
+      "submission_evaluation_metrics_agreement_rationale_58",
+      "submission_evaluation_metrics_agreement_rationale_9",
+      "submission_evaluation_metrics_agreement_rationale_90",
+      "submission_evaluation_metrics_agreement_weighted_kappa_linear",
+      "submission_evaluation_metrics_init",
+      "submission_evaluation_metrics_init_rationale_1",
+      "submission_tests_contracts_test_agreement_metrics",
+      "submission_tests_contracts_test_agreement_metrics_test_agreement_computes_when_labels_provided",
+      "submission_tests_contracts_test_agreement_metrics_test_agreement_pending_without_labels"
+    ],
+    "13": [
+      "submission_src_aegis_telemetry_console",
+      "submission_src_aegis_telemetry_console_consoletelemetryadapter",
+      "submission_src_aegis_telemetry_console_consoletelemetryadapter_counter",
+      "submission_src_aegis_telemetry_console_consoletelemetryadapter_end_span",
+      "submission_src_aegis_telemetry_console_consoletelemetryadapter_init",
+      "submission_src_aegis_telemetry_console_consoletelemetryadapter_start_span",
+      "submission_src_aegis_telemetry_console_py_any",
+      "submission_src_aegis_telemetry_console_rationale_19",
+      "submission_src_aegis_telemetry_console_span",
+      "submission_src_aegis_telemetry_init",
+      "submission_src_aegis_telemetry_redaction",
+      "submission_src_aegis_telemetry_redaction_py_any",
+      "submission_src_aegis_telemetry_redaction_redact_attributes",
+      "submission_tests_contracts_test_otel_redaction",
+      "submission_tests_contracts_test_otel_redaction_test_redacts_forbidden_keys",
+      "submission_tests_contracts_test_otel_redaction_test_redacts_substring_secret"
+    ],
+    "14": [
+      "fastapi",
+      "submission_scripts_setup_env",
+      "submission_scripts_setup_env_main",
+      "submission_src_aegis_api_app",
+      "submission_src_aegis_api_app_create_app",
+      "submission_src_aegis_api_app_get_container",
+      "submission_src_aegis_api_init",
+      "submission_src_aegis_composition_appcontainer",
+      "submission_src_aegis_composition_build_container",
+      "submission_tests_contracts_test_openapi_contract",
+      "submission_tests_contracts_test_openapi_contract_test_ontology_and_graph_routes",
+      "submission_tests_contracts_test_openapi_contract_test_openapi_and_health",
+      "submission_tests_workflows_test_pub_workflows_container",
+      "submission_tests_workflows_test_pub_workflows_py_fixture"
+    ],
+    "15": [
+      "evaluation_contracts_supply_response_schema_audit_type",
+      "evaluation_contracts_supply_response_schema_event_id_type",
+      "evaluation_contracts_supply_response_schema_execution_status_const",
+      "evaluation_contracts_supply_response_schema_human_review_type",
+      "evaluation_contracts_supply_response_schema_no_side_effects_const",
+      "evaluation_contracts_supply_response_schema_properties",
+      "evaluation_contracts_supply_response_schema_properties_audit",
+      "evaluation_contracts_supply_response_schema_properties_event_id",
+      "evaluation_contracts_supply_response_schema_properties_execution_status",
+      "evaluation_contracts_supply_response_schema_properties_human_review",
+      "evaluation_contracts_supply_response_schema_properties_no_side_effects",
+      "evaluation_contracts_supply_response_schema_properties_workflow",
+      "evaluation_contracts_supply_response_schema_workflow_const"
+    ],
+    "16": [
+      "basetransport",
+      "response",
+      "submission_src_aegis_clients_http",
+      "submission_src_aegis_clients_http_py_any",
+      "submission_src_aegis_clients_http_rationale_13",
+      "submission_src_aegis_clients_http_typedhttpclient",
+      "submission_src_aegis_clients_http_typedhttpclient_close",
+      "submission_src_aegis_clients_http_typedhttpclient_get_json",
+      "submission_src_aegis_clients_http_typedhttpclient_get_model",
+      "submission_src_aegis_clients_http_typedhttpclient_init",
+      "submission_src_aegis_clients_init",
+      "t"
+    ],
+    "17": [
+      "evaluation_contracts_supply_response_schema_abstentions_items",
+      "evaluation_contracts_supply_response_schema_abstentions_type",
+      "evaluation_contracts_supply_response_schema_contradictions_items",
+      "evaluation_contracts_supply_response_schema_contradictions_type",
+      "evaluation_contracts_supply_response_schema_gaps_items",
+      "evaluation_contracts_supply_response_schema_gaps_type",
+      "evaluation_contracts_supply_response_schema_items_type",
+      "evaluation_contracts_supply_response_schema_properties_abstentions",
+      "evaluation_contracts_supply_response_schema_properties_contradictions",
+      "evaluation_contracts_supply_response_schema_properties_gaps"
+    ],
+    "18": [
+      "evaluation_contracts_pv_response_schema_audit_type",
+      "evaluation_contracts_pv_response_schema_execution_status_const",
+      "evaluation_contracts_pv_response_schema_human_review_type",
+      "evaluation_contracts_pv_response_schema_properties",
+      "evaluation_contracts_pv_response_schema_properties_audit",
+      "evaluation_contracts_pv_response_schema_properties_execution_status",
+      "evaluation_contracts_pv_response_schema_properties_human_review",
+      "evaluation_contracts_pv_response_schema_properties_workflow",
+      "evaluation_contracts_pv_response_schema_workflow_const"
+    ],
+    "19": [
+      "submission_tests_workflows_test_multilingual_subgroup",
+      "submission_tests_workflows_test_multilingual_subgroup_container",
+      "submission_tests_workflows_test_multilingual_subgroup_languages_in_fixture",
+      "submission_tests_workflows_test_multilingual_subgroup_py_fixture",
+      "submission_tests_workflows_test_multilingual_subgroup_rationale_30",
+      "submission_tests_workflows_test_multilingual_subgroup_rationale_49",
+      "submission_tests_workflows_test_multilingual_subgroup_test_pub04_preserves_multilingual_languages",
+      "submission_tests_workflows_test_multilingual_subgroup_test_subgroup_languages_reported_not_collapsed"
+    ],
+    "20": [
+      "app_app",
+      "app_app_addtext",
+      "app_app_cards",
+      "app_app_dim",
+      "app_app_q",
+      "app_app_render",
+      "app_app_stats"
+    ],
+    "21": [
+      "evaluation_contracts_pv_response_schema_abstentions_items",
+      "evaluation_contracts_pv_response_schema_abstentions_type",
+      "evaluation_contracts_pv_response_schema_items_type",
+      "evaluation_contracts_pv_response_schema_properties_abstentions",
+      "evaluation_contracts_pv_response_schema_properties_terminology",
+      "evaluation_contracts_pv_response_schema_terminology_items",
+      "evaluation_contracts_pv_response_schema_terminology_type"
+    ],
+    "22": [
+      "evaluation_contracts_supply_response_schema_items_additionalproperties",
+      "evaluation_contracts_supply_response_schema_items_required",
+      "evaluation_contracts_supply_response_schema_options_items",
+      "evaluation_contracts_supply_response_schema_options_type",
+      "evaluation_contracts_supply_response_schema_properties_options",
+      "ref_option_id",
+      "ref_status"
+    ],
+    "23": [
+      "submission_src_aegis_contracts_base_typederror",
+      "submission_src_aegis_domain_tools",
+      "submission_src_aegis_domain_tools_validate_tool_call",
+      "submission_tests_contracts_test_tool_arg_validation",
+      "submission_tests_contracts_test_tool_arg_validation_test_invalid_payload_typed_error",
+      "submission_tests_contracts_test_tool_arg_validation_test_prohibited_tool_returns_typed_error",
+      "submission_tests_contracts_test_tool_arg_validation_test_valid_tool_args"
+    ],
+    "24": [
+      "submission_app_src_app",
+      "submission_app_src_app_app",
+      "submission_app_src_app_app_loadontologygraph",
+      "submission_app_src_app_app_runreview",
+      "submission_app_src_app_fixtures",
+      "submission_app_src_main"
+    ],
+    "25": [
+      "submission_src_aegis_adapters_tool_manifest",
+      "submission_src_aegis_adapters_tool_manifest_filetoolmanifestadapter",
+      "submission_src_aegis_adapters_tool_manifest_filetoolmanifestadapter_is_approved",
+      "submission_tests_security_test_tool_manifest",
+      "submission_tests_security_test_tool_manifest_test_accepts_approved_manifest_name",
+      "submission_tests_security_test_tool_manifest_test_rejects_poisoned_manifest_name"
+    ],
+    "26": [
+      "evaluation_contracts_supply_response_schema",
+      "evaluation_contracts_supply_response_schema_additionalproperties",
+      "evaluation_contracts_supply_response_schema_id",
+      "evaluation_contracts_supply_response_schema_schema",
+      "evaluation_contracts_supply_response_schema_type"
+    ],
+    "27": [
+      "evaluation_contracts_supply_response_schema_items_properties",
+      "evaluation_contracts_supply_response_schema_option_id_type",
+      "evaluation_contracts_supply_response_schema_properties_option_id",
+      "evaluation_contracts_supply_response_schema_properties_status",
+      "evaluation_contracts_supply_response_schema_status_const"
+    ],
+    "28": [
+      "starter_legacy_pharma",
+      "starter_legacy_pharma_batch_ready",
+      "starter_legacy_pharma_load",
+      "starter_legacy_pharma_plan_supply",
+      "starter_legacy_pharma_search_knowledge"
+    ],
+    "29": [
+      "starter_legacy_portal",
+      "starter_legacy_portal_cansee",
+      "starter_legacy_portal_executetool",
+      "starter_legacy_portal_retry",
+      "starter_legacy_portal_summarise"
+    ],
+    "30": [
+      "evaluation_contracts_pv_response_schema_case_ids_items",
+      "evaluation_contracts_pv_response_schema_case_ids_minitems",
+      "evaluation_contracts_pv_response_schema_case_ids_type",
+      "evaluation_contracts_pv_response_schema_properties_case_ids"
+    ],
+    "31": [
+      "evaluation_contracts_pv_response_schema_evidence_items",
+      "evaluation_contracts_pv_response_schema_evidence_type",
+      "evaluation_contracts_pv_response_schema_items_ref",
+      "evaluation_contracts_pv_response_schema_properties_evidence"
+    ],
+    "32": [
+      "evaluation_contracts_supply_response_schema_evidence_items",
+      "evaluation_contracts_supply_response_schema_evidence_type",
+      "evaluation_contracts_supply_response_schema_items_ref",
+      "evaluation_contracts_supply_response_schema_properties_evidence"
+    ],
+    "33": [
+      "submission_evaluation_graders_registry_py_any",
+      "submission_evaluation_graders_registry_run_all_graders",
+      "submission_scripts_evaluate_public_fixtures",
+      "submission_scripts_evaluate_public_fixtures_main"
+    ],
+    "34": [
+      "submission_scripts_export_evidence",
+      "submission_scripts_export_evidence_main",
+      "submission_scripts_export_evidence_py_path",
+      "submission_scripts_export_evidence_sha256_file"
+    ],
+    "35": [
+      "tools_test_contracts",
+      "tools_test_contracts_main",
+      "tools_test_contracts_run",
+      "tools_test_contracts_validate"
+    ],
+    "36": [
+      "tools_verify_package",
+      "tools_verify_package_err",
+      "tools_verify_package_readcsv",
+      "tools_verify_package_sha"
+    ],
+    "37": [
+      "evaluation_contracts_pv_response_schema_as_of_minlength",
+      "evaluation_contracts_pv_response_schema_as_of_type",
+      "evaluation_contracts_pv_response_schema_properties_as_of"
+    ],
+    "38": [
+      "evaluation_contracts_pv_response_schema_clock_evidence_items",
+      "evaluation_contracts_pv_response_schema_clock_evidence_type",
+      "evaluation_contracts_pv_response_schema_properties_clock_evidence"
+    ],
+    "39": [
+      "evaluation_contracts_pv_response_schema_contradictions_items",
+      "evaluation_contracts_pv_response_schema_contradictions_type",
+      "evaluation_contracts_pv_response_schema_properties_contradictions"
+    ],
+    "40": [
+      "evaluation_contracts_pv_response_schema_duplicate_candidates_items",
+      "evaluation_contracts_pv_response_schema_duplicate_candidates_type",
+      "evaluation_contracts_pv_response_schema_properties_duplicate_candidates"
+    ],
+    "41": [
+      "evaluation_contracts_pv_response_schema_gaps_items",
+      "evaluation_contracts_pv_response_schema_gaps_type",
+      "evaluation_contracts_pv_response_schema_properties_gaps"
+    ],
+    "42": [
+      "evaluation_contracts_pv_response_schema_listedness_context_items",
+      "evaluation_contracts_pv_response_schema_listedness_context_type",
+      "evaluation_contracts_pv_response_schema_properties_listedness_context"
+    ],
+    "43": [
+      "evaluation_contracts_pv_response_schema_properties_request_id",
+      "evaluation_contracts_pv_response_schema_request_id_minlength",
+      "evaluation_contracts_pv_response_schema_request_id_type"
+    ],
+    "44": [
+      "evaluation_contracts_pv_response_schema_properties_required_reviews",
+      "evaluation_contracts_pv_response_schema_required_reviews_items",
+      "evaluation_contracts_pv_response_schema_required_reviews_type"
+    ],
+    "45": [
+      "evaluation_contracts_pv_response_schema_properties_source_facts",
+      "evaluation_contracts_pv_response_schema_source_facts_items",
+      "evaluation_contracts_pv_response_schema_source_facts_type"
+    ],
+    "46": [
+      "evaluation_contracts_supply_response_schema_approvals_required_items",
+      "evaluation_contracts_supply_response_schema_approvals_required_type",
+      "evaluation_contracts_supply_response_schema_properties_approvals_required"
+    ],
+    "47": [
+      "evaluation_contracts_supply_response_schema_as_of_minlength",
+      "evaluation_contracts_supply_response_schema_as_of_type",
+      "evaluation_contracts_supply_response_schema_properties_as_of"
+    ],
+    "48": [
+      "evaluation_contracts_supply_response_schema_constraints_items",
+      "evaluation_contracts_supply_response_schema_constraints_type",
+      "evaluation_contracts_supply_response_schema_properties_constraints"
+    ],
+    "49": [
+      "evaluation_contracts_supply_response_schema_properties_quality_holds",
+      "evaluation_contracts_supply_response_schema_quality_holds_items",
+      "evaluation_contracts_supply_response_schema_quality_holds_type"
+    ],
+    "50": [
+      "evaluation_contracts_supply_response_schema_properties_request_id",
+      "evaluation_contracts_supply_response_schema_request_id_minlength",
+      "evaluation_contracts_supply_response_schema_request_id_type"
+    ],
+    "51": [
+      "run_capstone_main",
+      "run_capstone_py_run_capstone",
+      "run_capstone_run"
+    ],
+    "52": [
+      "run_capstone_pythondontwritebytecode",
+      "run_capstone_sh__entry",
+      "run_capstone_sh_run_capstone"
+    ],
+    "53": [
+      "starter_baseline_diagnostics",
+      "starter_baseline_diagnostics_main",
+      "starter_baseline_diagnostics_rows"
+    ],
+    "54": [
+      "tools_check_submission_structure",
+      "tools_check_submission_structure_main",
+      "tools_check_submission_structure_substantive"
+    ],
+    "55": [
+      "tools_hash_submission",
+      "tools_hash_submission_main",
+      "tools_hash_submission_rows"
+    ],
+    "56": [
+      "tools_rebuild_explorer_data",
+      "tools_rebuild_explorer_data_expected",
+      "tools_rebuild_explorer_data_main"
+    ],
+    "57": [
+      "submission_evaluation_graders_init",
+      "submission_evaluation_graders_init_rationale_1"
+    ],
+    "58": [
+      "submission_scripts_reset_submission",
+      "submission_scripts_reset_submission_main"
+    ],
+    "59": [
+      "submission_scripts_run_app",
+      "submission_scripts_run_app_main"
+    ],
+    "60": [
+      "submission_scripts_run_tests",
+      "submission_scripts_run_tests_main"
+    ],
+    "61": [
+      "submission_src_aegis_adapters_init",
+      "submission_src_aegis_adapters_init_rationale_1"
+    ],
+    "62": [
+      "submission_src_aegis_domain_init",
+      "submission_src_aegis_domain_init_rationale_1"
+    ],
+    "63": [
+      "submission_src_aegis_init",
+      "submission_src_aegis_init_rationale_1"
+    ],
+    "64": [
+      "app_data"
+    ],
+    "65": [
+      "run_capstone_ps1_run_capstone"
+    ],
+    "66": [
+      "submission_app_vite_config"
+    ],
+    "67": [
+      "submission_evaluation_init"
+    ],
+    "68": [
+      "submission_tests_conftest"
+    ]
+  },
+  "cohesion": {
+    "0": 0.048625792811839326,
+    "1": 0.045454545454545456,
+    "2": 0.059800664451827246,
+    "3": 0.05365853658536585,
+    "4": 0.22281639928698752,
+    "5": 0.16344086021505377,
+    "6": 0.10114942528735632,
+    "7": 0.1452991452991453,
+    "8": 0.16666666666666666,
+    "9": 0.11578947368421053,
+    "10": 0.10526315789473684,
+    "11": 0.125,
+    "12": 0.225,
+    "13": 0.21666666666666667,
+    "14": 0.24175824175824176,
+    "15": 0.15384615384615385,
+    "16": 0.18181818181818182,
+    "17": 0.2,
+    "18": 0.2222222222222222,
+    "19": 0.2857142857142857,
+    "20": 0.3333333333333333,
+    "21": 0.2857142857142857,
+    "22": 0.2857142857142857,
+    "23": 0.6190476190476191,
+    "24": 0.4,
+    "25": 0.4666666666666667,
+    "26": 0.4,
+    "27": 0.4,
+    "28": 0.6,
+    "29": 0.4,
+    "30": 0.5,
+    "31": 0.5,
+    "32": 0.5,
+    "33": 0.5,
+    "34": 0.6666666666666666,
+    "35": 0.8333333333333334,
+    "36": 0.5,
+    "37": 0.6666666666666666,
+    "38": 0.6666666666666666,
+    "39": 0.6666666666666666,
+    "40": 0.6666666666666666,
+    "41": 0.6666666666666666,
+    "42": 0.6666666666666666,
+    "43": 0.6666666666666666,
+    "44": 0.6666666666666666,
+    "45": 0.6666666666666666,
+    "46": 0.6666666666666666,
+    "47": 0.6666666666666666,
+    "48": 0.6666666666666666,
+    "49": 0.6666666666666666,
+    "50": 0.6666666666666666,
+    "51": 1.0,
+    "52": 0.6666666666666666,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0
+  },
+  "gods": [
+    {
+      "id": "submission_src_aegis_services_orchestrator_run_fixture_workflow",
+      "label": "run_fixture_workflow()",
+      "degree": 25
+    },
+    {
+      "id": "submission_src_aegis_composition_build_container",
+      "label": "build_container()",
+      "degree": 23
+    },
+    {
+      "id": "evaluation_contracts_pv_response_schema_required",
+      "label": "required",
+      "degree": 19
+    },
+    {
+      "id": "evaluation_contracts_supply_response_schema_required",
+      "label": "required",
+      "degree": 18
+    },
+    {
+      "id": "submission_src_aegis_adapters_graph_neo4j_neo4jgraphadapter",
+      "label": "Neo4jGraphAdapter",
+      "degree": 16
+    },
+    {
+      "id": "evaluation_contracts_batch_response_schema_required",
+      "label": "required",
+      "degree": 15
+    },
+    {
+      "id": "submission_evaluation_graders_g_boundaries_base",
+      "label": "_base()",
+      "degree": 15
+    },
+    {
+      "id": "submission_src_aegis_contracts_base_strictmodel",
+      "label": "StrictModel",
+      "degree": 15
+    },
+    {
+      "id": "submission_src_aegis_contracts_base_authorizationcontext",
+      "label": "AuthorizationContext",
+      "degree": 14
+    },
+    {
+      "id": "submission_src_aegis_contracts_base_humanreview",
+      "label": "HumanReview",
+      "degree": 13
+    }
+  ],
+  "surprises": [
+    {
+      "source": "main()",
+      "target": "compute_agreement()",
+      "source_files": [
+        "submission/scripts/evaluate_public_fixtures.py",
+        "submission/evaluation/metrics/agreement.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "test_agreement_computes_when_labels_provided()",
+      "target": "compute_agreement()",
+      "source_files": [
+        "submission/tests/contracts/test_agreement_metrics.py",
+        "submission/evaluation/metrics/agreement.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `test_agreement_computes_when_labels_provided()` unexpectedly reaches hub `compute_agreement()`"
+    },
+    {
+      "source": "test_agreement_pending_without_labels()",
+      "target": "compute_agreement()",
+      "source_files": [
+        "submission/tests/contracts/test_agreement_metrics.py",
+        "submission/evaluation/metrics/agreement.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `test_agreement_pending_without_labels()` unexpectedly reaches hub `compute_agreement()`"
+    },
+    {
+      "source": "main()",
+      "target": "build_container()",
+      "source_files": [
+        "submission/scripts/setup_env.py",
+        "submission/src/aegis/composition.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; peripheral node `main()` unexpectedly reaches hub `build_container()`"
+    },
+    {
+      "source": "AppContainer",
+      "target": "InMemoryAuditAdapter",
+      "source_files": [
+        "submission/src/aegis/composition.py",
+        "submission/src/aegis/adapters/audit.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
