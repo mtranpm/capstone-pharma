@@ -1,5 +1,5 @@
 {
-  "request_id": "REQ-0246d0bb2b",
+  "request_id": "REQ-34a29a369c",
   "workflow": "crosscut_finops",
   "as_of": "2026-08-01T08:00:00Z",
   "authorization": {
@@ -202,8 +202,8 @@
   },
   "execution_status": "not_executed",
   "audit": {
-    "event_id": "AUD-942c93bf",
-    "trace_id": "tr-85e7e21f210f"
+    "event_id": "AUD-29997012",
+    "trace_id": "tr-dbbd6e27342e"
   },
   "findings": [
     {

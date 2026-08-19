@@ -1,5 +1,5 @@
 {
-  "request_id": "REQ-f7c141d7e3",
+  "request_id": "REQ-84fa15e0e8",
   "workflow": "batch_evidence",
   "as_of": "2026-08-01T08:00:00Z",
   "authorization": {
@@ -208,8 +208,8 @@
   },
   "execution_status": "not_executed",
   "audit": {
-    "event_id": "AUD-84bac67d",
-    "trace_id": "tr-80a68c9cd4a7"
+    "event_id": "AUD-9dd88603",
+    "trace_id": "tr-dddbc07d70f8"
   },
   "batch_id": "NCB204-B24071",
   "readiness_state": "conflicted_evidence",

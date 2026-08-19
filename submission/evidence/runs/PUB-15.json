@@ -1,5 +1,5 @@
 {
-  "request_id": "REQ-612fbbc9b2",
+  "request_id": "REQ-ece9d041cc",
   "workflow": "crosscut_clinical",
   "as_of": "2026-08-01T08:00:00Z",
   "authorization": {
@@ -206,8 +206,8 @@
   },
   "execution_status": "not_executed",
   "audit": {
-    "event_id": "AUD-78b565eb",
-    "trace_id": "tr-bb0fd323310b"
+    "event_id": "AUD-fc88fc54",
+    "trace_id": "tr-b234fc6286f0"
   },
   "findings": [
     {

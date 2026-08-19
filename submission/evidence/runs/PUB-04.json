@@ -1,5 +1,5 @@
 {
-  "request_id": "REQ-e607f69e60",
+  "request_id": "REQ-e84e1ce39d",
   "workflow": "pv_intake",
   "as_of": "2026-08-01T08:00:00Z",
   "authorization": {
@@ -371,8 +371,8 @@
   },
   "execution_status": "not_executed",
   "audit": {
-    "event_id": "AUD-550c28ff",
-    "trace_id": "tr-b7c533a7fb42"
+    "event_id": "AUD-b7957d13",
+    "trace_id": "tr-462ba889ab36"
   },
   "case_ids": [
     "PV-1001",

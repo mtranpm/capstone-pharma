@@ -11,6 +11,8 @@ Submission artefact **`08_ddd_context_map.md`** synthesises bounded contexts for
 | 4 | Bounded context canvases | [`Docs/DDD-Lab/Phase 4/A4_Bounded_Context_Canvases.md`](../../Docs/DDD-Lab/Phase%204/A4_Bounded_Context_Canvases.md) | Ten contexts; ownership boundaries |
 | 5 | Context map | [`Docs/DDD-Lab/Phase 5/A5_Context_Map.md`](../../Docs/DDD-Lab/Phase%205/A5_Context_Map.md) | Relationships, shared kernel, handoffs |
 | 6 | Event storming | [`Docs/DDD-Lab/Phase 6/A6_Event_Storming_Board.md`](../../Docs/DDD-Lab/Phase%206/A6_Event_Storming_Board.md) | Workflow events (reference) |
+| 6 | Event storming (exec graphic) | [`event_storming_executive.md`](event_storming_executive.md) | Leadership Mermaid slides from A6 |
+| — | Ontology / KG pictorial | [`ontology_knowledge_graph_pictorial.md`](ontology_knowledge_graph_pictorial.md) | Classes, relationships, advisory KG diagrams |
 | 7 | Domain model & invariants | [`Docs/DDD-Lab/Phase 7/A7_Domain_Model_and_Invariant_Register.md`](../../Docs/DDD-Lab/Phase%207/A7_Domain_Model_and_Invariant_Register.md) | Aggregates, invariants, anti-patterns |
 
 ## Related DDD-Lab (downstream reference)

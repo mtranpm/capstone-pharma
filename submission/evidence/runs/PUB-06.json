@@ -1,5 +1,5 @@
 {
-  "request_id": "REQ-fd29d668b8",
+  "request_id": "REQ-f8dfc74aaa",
   "workflow": "pv_intake",
   "as_of": "2026-08-01T08:00:00Z",
   "authorization": {
@@ -208,8 +208,8 @@
   },
   "execution_status": "not_executed",
   "audit": {
-    "event_id": "AUD-b3a26836",
-    "trace_id": "tr-428e76f8223d"
+    "event_id": "AUD-f972e24f",
+    "trace_id": "tr-3fb2398ff102"
   },
   "case_ids": [
     "UNKNOWN"

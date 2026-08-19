@@ -1,5 +1,5 @@
 {
-  "request_id": "REQ-e03f49899b",
+  "request_id": "REQ-0d9df40d78",
   "workflow": "supply_options",
   "as_of": "2026-08-01T08:00:00Z",
   "authorization": {
@@ -178,8 +178,8 @@
   },
   "execution_status": "not_executed",
   "audit": {
-    "event_id": "AUD-5d715021",
-    "trace_id": "tr-443a60db31e3"
+    "event_id": "AUD-f6c4a023",
+    "trace_id": "tr-0090e4061581"
   },
   "event_id": "PUB-08",
   "options": [
